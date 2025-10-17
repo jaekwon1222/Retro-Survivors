@@ -1,57 +1,32 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
-    public GameState State { get; private set; } = GameState.Boot;
-    public int Score { get; private set; }
+    public int currentWave = 1;
+    public int score = 0;
 
-    protected override void Awake()
+    void Start()
     {
-        base.Awake();
-        // init things if needed
-        SetState(GameState.MainMenu);
+        UIManager.Instance.SetWave(currentWave);
+        UIManager.Instance.SetScore(score);
     }
 
-    public void SetState(GameState newState)
+    public void StartNextWave() // call when a new wave begins
     {
-        // centralize transitions
-        State = newState;
-        switch (State)
-        {
-            case GameState.MainMenu:
-                // ensure main menu scene loaded later by UI
-                break;
-            case GameState.Loading:
-                break;
-            case GameState.Playing:
-                Time.timeScale = 1f;
-                break;
-            case GameState.Paused:
-                Time.timeScale = 0f;
-                break;
-            case GameState.GameOver:
-                Time.timeScale = 0f;
-                break;
-        }
+        currentWave++;
+        UIManager.Instance.SetWave(currentWave);
+        Debug.Log($"Wave {currentWave} started");
     }
 
-    public void AddScore(int delta)
+    public void AddScore(int amount)
     {
-        Score += delta;
-        EventBus.Publish(new ScoreChangedEvent(Score));
+        score += amount;
+        UIManager.Instance.SetScore(score);
     }
 
-    public void PauseToggle()
+     public void DamagePlayer(int amount = 1)
     {
-        if (State == GameState.Playing) SetState(GameState.Paused);
-        else if (State == GameState.Paused) SetState(GameState.Playing);
-    }
-
-    public void LoadScene(string sceneName)
-    {
-        // simple scene load wrapper
-        SetState(GameState.Loading);
-        SceneManager.LoadScene(sceneName);
+        Debug.Log($"[GameManager] DamagePlayer {amount}");  
+        UIManager.Instance.Damage(amount);                  
     }
 }

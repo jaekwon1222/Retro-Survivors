@@ -3,8 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
-    // Load play scene
-    public void OnClickStart() => SceneManager.LoadScene("Scene_Entry");
+    // Start → load play scene
+    public void OnClickStart()
+    {
+        SceneManager.LoadScene("Scene_Entry");
+    }
 
     // Quit app (Editor stops Play)
     public void OnClickQuit()
@@ -14,5 +17,16 @@ public class MainMenuController : MonoBehaviour
 #else
         Application.Quit();
 #endif
+    }
+
+    void Update()
+    {
+        // Press Enter to Start
+        if (Input.GetKeyDown(KeyCode.Return))
+            OnClickStart();
+
+        // Press Esc to Quit
+        if (Input.GetKeyDown(KeyCode.Escape))
+            OnClickQuit();
     }
 }

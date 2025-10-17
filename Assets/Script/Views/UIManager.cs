@@ -7,58 +7,50 @@ using UnityEngine.SceneManagement;
 public class UIManager : Singleton<UIManager>
 {
     [Header("HUD Refs (Scene_Entry)")]
-    public Transform heartsParent;     // parent object for heart icons
-    public GameObject heartPrefab;     // prefab for heart image
-    public TextMeshProUGUI waveText;   // UI text for wave
-    public TextMeshProUGUI scoreText;  // UI text for score
+    public Transform heartsParent;     // parent for heart icons (TopBar/Hearts)
+    public GameObject heartPrefab;     // prefab for a single heart (UI Image)
+    public TextMeshProUGUI waveText;   // Wave text (e.g., "Wave: 1")
+    public TextMeshProUGUI scoreText;  // Score text (e.g., "Score: 0")
     public int maxHP = 10;             // max health points
 
-    private List<Image> hearts = new List<Image>();
+    private readonly List<Image> hearts = new List<Image>();
     private int currentHP;
     private int currentWave = 1;
     private int currentScore = 0;
-    private float waveTimer = 0f;
-    private float waveInterval = 10f;  // seconds between waves
 
-    void Start()
+    protected override void Awake()
     {
-        // init HUD when scene starts
-        InitHearts(maxHP);
-        SetHP(maxHP);
-        UpdateWaveText();
-        UpdateScoreText(0);
-    }
-
-    void Update()
-    {
-        // test damage (press H)
-        if (Input.GetKeyDown(KeyCode.H))
-            Damage(1);
-
-        // auto wave increase every interval
-        waveTimer += Time.deltaTime;
-        if (waveTimer >= waveInterval)
+        base.Awake();
+        // UIManager should live only in Entry scene
+        if (SceneManager.GetActiveScene().name != "Scene_Entry")
         {
-            waveTimer = 0f;
-            currentWave++;
-            UpdateWaveText();
+            Destroy(gameObject);
+            return;
         }
     }
 
-    // --- HP logic ---
+    void Start()
+    {
+        // init HUD at scene start
+        InitHearts(maxHP);
+        SetHP(maxHP);
+        SetWave(1);
+        SetScore(0);
+    }
 
+    // -------- HP / Hearts --------
     public void InitHearts(int count)
     {
-        // remove old hearts
-        foreach (Transform c in heartsParent)
-            Destroy(c.gameObject);
+        if (!heartsParent || !heartPrefab) return;
+
+        foreach (Transform c in heartsParent) Destroy(c.gameObject);
         hearts.Clear();
 
-        // create new hearts
         for (int i = 0; i < count; i++)
         {
-            GameObject h = Instantiate(heartPrefab, heartsParent);
-            hearts.Add(h.GetComponent<Image>());
+            var go = Instantiate(heartPrefab, heartsParent);
+            var img = go.GetComponent<Image>();
+            hearts.Add(img);
         }
     }
 
@@ -71,78 +63,41 @@ public class UIManager : Singleton<UIManager>
             hearts[i].enabled = i < currentHP;
     }
 
-    public void Damage(int dmg = 1)
+    public void Damage(int amount = 1)
+{
+    Debug.Log($"[UIManager] Damage before={currentHP}, after={currentHP - amount}, hearts={hearts.Count}"); // 로그 3
+    SetHP(currentHP - amount);
+    if (currentHP <= 0)
     {
-        currentHP -= dmg;
-        SetHP(currentHP);
-        if (currentHP <= 0)
-        {
-            Debug.Log("Player Dead");
-            // TODO: add GameOver UI later
-        }
+        Debug.Log("Player Dead");
+        // TODO: show game over UI
+    }
+}
+
+    public void Heal(int amount = 1) => SetHP(currentHP + amount);
+
+    // -------- Wave / Score --------
+    public void SetWave(int wave)
+    {
+        currentWave = Mathf.Max(1, wave);
+        if (waveText) waveText.text = $"Wave: {currentWave}";
     }
 
-    // --- Wave logic ---
-
-    public void UpdateWaveText()
+    public void SetScore(int score)
     {
-        if (waveText)
-            waveText.text = $"Wave: {currentWave}";
+        currentScore = Mathf.Max(0, score);
+        if (scoreText) scoreText.text = $"Score: {currentScore}";
     }
 
-    // --- Score logic ---
-
-    public void UpdateScoreText(int score)
+    public void AddScore(int delta)
     {
-        currentScore = score;
-        if (scoreText)
-            scoreText.text = $"Score: {currentScore}";
+        SetScore(currentScore + delta);
     }
 
-    public void AddScore(int amount)
-    {
-        currentScore += amount;
-        UpdateScoreText(currentScore);
-    }
-
-    // --- Button functions ---
-
-    public void OnClickStart()
-    {
-        // go to Entry scene when Start is pressed
-        GameManager.Instance.LoadScene("Scene_Entry");
-        GameManager.Instance.SetState(GameState.Playing);
-    }
-
+    // -------- Buttons --------
     public void OnClickBackToMenu()
     {
-        // return to Main Menu scene
         SceneManager.LoadScene("Scene_MainMenu");
-        GameManager.Instance.SetState(GameState.MainMenu);
         Time.timeScale = 1f;
     }
-
-    public void OnClickQuit()
-    {
-#if UNITY_EDITOR
-        // stop Play mode in editor
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-        // quit app in build
-        Application.Quit();
-#endif
-    }
-
-    protected override void Awake()
-    {
-        base.Awake();
-
-        // Kill stray UIManager if not in Entry scene
-        if (SceneManager.GetActiveScene().name != "Scene_Entry")
-        {
-            Destroy(gameObject);
-            return;
-        }
-    }
-
 }
