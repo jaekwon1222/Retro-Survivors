@@ -1,0 +1,2860 @@
+fileFormatVersion: 2
+guid: 87b7fcafeb5fa43d1806dda99a19630b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3865779245405396931
+    second: damaged_0
+  - first:
+      213: -6806755141263944071
+    second: damaged_1
+  - first:
+      213: -4102841925239998255
+    second: damaged_2
+  - first:
+      213: 229976294609435873
+    second: damaged_3
+  - first:
+      213: -8036808465469291113
+    second: damaged_4
+  - first:
+      213: -3840802220300860508
+    second: damaged_5
+  - first:
+      213: 6631632140554703921
+    second: damaged_6
+  - first:
+      213: -3849542103520707673
+    second: damaged_7
+  - first:
+      213: 2512912169837372114
+    second: damaged_8
+  - first:
+      213: 5482888753692775456
+    second: damaged_9
+  - first:
+      213: -4068997835777397931
+    second: damaged_10
+  - first:
+      213: -448408129417960877
+    second: damaged_11
+  - first:
+      213: -8927369121469256896
+    second: damaged_12
+  - first:
+      213: 7940664978670994165
+    second: damaged_13
+  - first:
+      213: 7217209189522327908
+    second: damaged_14
+  - first:
+      213: 992338280747817975
+    second: damaged_15
+  - first:
+      213: -4954798691886683276
+    second: damaged_16
+  - first:
+      213: 9216018229398190847
+    second: damaged_17
+  - first:
+      213: 726882328034682960
+    second: damaged_18
+  - first:
+      213: 6351581948009461556
+    second: damaged_19
+  - first:
+      213: 7889755981970353625
+    second: damaged_20
+  - first:
+      213: 4276768032161437549
+    second: damaged_21
+  - first:
+      213: -7062600564436639780
+    second: damaged_22
+  - first:
+      213: -7168560323944225296
+    second: damaged_23
+  - first:
+      213: 8498557719081837686
+    second: damaged_24
+  - first:
+      213: 6711984564151345996
+    second: damaged_25
+  - first:
+      213: -707115935151731705
+    second: damaged_26
+  - first:
+      213: -3263597779954705798
+    second: damaged_27
+  - first:
+      213: -1203703688211010175
+    second: damaged_28
+  - first:
+      213: -2673997287648707101
+    second: damaged_29
+  - first:
+      213: -5124742765420603767
+    second: damaged_30
+  - first:
+      213: -5094765933002223128
+    second: damaged_31
+  - first:
+      213: -7361785619453617119
+    second: damaged_32
+  - first:
+      213: -1714058700253490433
+    second: damaged_33
+  - first:
+      213: -8430446024426288602
+    second: damaged_34
+  - first:
+      213: 380413311492944553
+    second: damaged_35
+  - first:
+      213: 2006419944896215304
+    second: damaged_36
+  - first:
+      213: 6432552934025187201
+    second: damaged_37
+  - first:
+      213: -2658468632171724302
+    second: damaged_38
+  - first:
+      213: -4214659595494001155
+    second: damaged_39
+  - first:
+      213: 6313849787009603159
+    second: damaged_40
+  - first:
+      213: -6096536060391563932
+    second: damaged_41
+  - first:
+      213: 8697547730098648265
+    second: damaged_42
+  - first:
+      213: 24030180094915933
+    second: damaged_43
+  - first:
+      213: -19017247160502897
+    second: damaged_44
+  - first:
+      213: -4793504173691485235
+    second: damaged_45
+  - first:
+      213: 7279626539638402886
+    second: damaged_46
+  - first:
+      213: -6058645126144006204
+    second: damaged_47
+  - first:
+      213: -8094564496298411089
+    second: damaged_48
+  - first:
+      213: 1397497842215079785
+    second: damaged_49
+  - first:
+      213: 4804325683905834629
+    second: damaged_50
+  - first:
+      213: 7321677130435891388
+    second: damaged_51
+  - first:
+      213: -4108441956246422713
+    second: damaged_52
+  - first:
+      213: -7835787811490425294
+    second: damaged_53
+  - first:
+      213: 416493637131806415
+    second: damaged_54
+  - first:
+      213: 7160313616859719896
+    second: damaged_55
+  - first:
+      213: -3498348636278493637
+    second: damaged_56
+  - first:
+      213: 2408220354985954345
+    second: damaged_57
+  - first:
+      213: 7811975013518623434
+    second: damaged_58
+  - first:
+      213: 5253841142576270508
+    second: damaged_59
+  - first:
+      213: -1070800532492489310
+    second: damaged_60
+  - first:
+      213: 3077638236163447263
+    second: damaged_61
+  - first:
+      213: -7422517661439057959
+    second: damaged_62
+  - first:
+      213: 2287618071214697065
+    second: damaged_63
+  - first:
+      213: -8189811985197923506
+    second: damaged_64
+  - first:
+      213: 6533024105534028373
+    second: damaged_65
+  - first:
+      213: 82204619908026176
+    second: damaged_66
+  - first:
+      213: 5078955452595537854
+    second: damaged_67
+  - first:
+      213: 8775111993077447708
+    second: damaged_68
+  - first:
+      213: -2556867752007582360
+    second: damaged_69
+  - first:
+      213: 873120977052794760
+    second: damaged_70
+  - first:
+      213: -4173617179653672543
+    second: damaged_71
+  - first:
+      213: 7509669423268708188
+    second: damaged_72
+  - first:
+      213: -4958498913484731604
+    second: damaged_73
+  - first:
+      213: -5178415070216898252
+    second: damaged_74
+  - first:
+      213: 3755544926078000614
+    second: damaged_75
+  - first:
+      213: 7092550798181436430
+    second: damaged_76
+  - first:
+      213: -2743217160526618354
+    second: damaged_77
+  - first:
+      213: -203529607745762343
+    second: damaged_78
+  - first:
+      213: -4977447309284619308
+    second: damaged_79
+  - first:
+      213: 7235422573045642908
+    second: damaged_80
+  - first:
+      213: 3871327221805827187
+    second: damaged_81
+  - first:
+      213: -6895867268180586162
+    second: damaged_82
+  - first:
+      213: -8056960392536909036
+    second: damaged_83
+  - first:
+      213: -350346137006234680
+    second: damaged_84
+  - first:
+      213: 680019292277852422
+    second: damaged_85
+  - first:
+      213: 8649046679249934325
+    second: damaged_86
+  - first:
+      213: 6097180887726693229
+    second: damaged_87
+  - first:
+      213: 1599932377570722303
+    second: damaged_88
+  - first:
+      213: -6234808786334030343
+    second: damaged_89
+  - first:
+      213: -7216595921634275048
+    second: damaged_90
+  - first:
+      213: -2220015609416514865
+    second: damaged_91
+  - first:
+      213: -1126506462141601186
+    second: damaged_92
+  - first:
+      213: -248227394053939304
+    second: damaged_93
+  - first:
+      213: -113864688822487414
+    second: damaged_94
+  - first:
+      213: 4197123286147453799
+    second: damaged_95
+  - first:
+      213: 2420050074702627210
+    second: damaged_96
+  - first:
+      213: -6754223869295628565
+    second: damaged_97
+  - first:
+      213: -596210568334274172
+    second: damaged_98
+  - first:
+      213: -8287427145058623261
+    second: damaged_99
+  - first:
+      213: -1853489656115962186
+    second: damaged_100
+  - first:
+      213: -9171392653463915574
+    second: damaged_101
+  - first:
+      213: -850484161121489076
+    second: damaged_102
+  - first:
+      213: 7942701359827042641
+    second: damaged_103
+  - first:
+      213: 3832107764530377703
+    second: damaged_104
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: damaged_0
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 939
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cf577eedb106a530800000000000000
+      internalID: 3865779245405396931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_1
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 941
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97616e3434c8981a0800000000000000
+      internalID: -6806755141263944071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_2
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 869
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d87d7cb107cf07c0800000000000000
+      internalID: -4102841925239998255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_3
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 887
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ecb4f2b83a013300800000000000000
+      internalID: 229976294609435873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_4
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 869
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 795c9df0845877090800000000000000
+      internalID: -8036808465469291113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_5
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 860
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a38f66eabab2bac0800000000000000
+      internalID: -3840802220300860508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_6
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 896
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13493d2cb4a480c50800000000000000
+      internalID: 6631632140554703921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_7
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 842
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7abfcb34adda39ac0800000000000000
+      internalID: -3849542103520707673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_8
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 833
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2a9e2fd48afd220800000000000000
+      internalID: 2512912169837372114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_9
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 860
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02497da9542271c40800000000000000
+      internalID: 5482888753692775456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_10
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 815
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ba7aed6040887c0800000000000000
+      internalID: -4068997835777397931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_11
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 833
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35225ab9e2fe6c9f0800000000000000
+      internalID: -448408129417960877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_12
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 806
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04ba800551d9b1480800000000000000
+      internalID: -8927369121469256896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_13
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 823
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f2c1160ab8e23e60800000000000000
+      internalID: 7940664978670994165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_14
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 815
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 469c92bf48da82460800000000000000
+      internalID: 7217209189522327908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_15
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 806
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fbdef0a86e75cd00800000000000000
+      internalID: 992338280747817975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_16
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 257
+        width: 481
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47b268467d40d3bb0800000000000000
+      internalID: -4954798691886683276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_17
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 797
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffabdc640cfd5ef70800000000000000
+      internalID: 9216018229398190847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_18
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 752
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 058240c40a7661a00800000000000000
+      internalID: 726882328034682960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_19
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 770
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43733ec212a552850800000000000000
+      internalID: 6351581948009461556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_20
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 770
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd2bdd834b0e7d60800000000000000
+      internalID: 7889755981970353625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_21
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 752
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d679abfadd12a5b30800000000000000
+      internalID: 4276768032161437549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_22
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 761
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdfd746b43a9cfd90800000000000000
+      internalID: -7062600564436639780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_23
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 716
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f56854bd58248c90800000000000000
+      internalID: -7168560323944225296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_24
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 725
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 674e60dd731f0f570800000000000000
+      internalID: 8498557719081837686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_25
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 707
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4365244662c52d50800000000000000
+      internalID: 6711984564151345996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_26
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 680
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c434eadc1df26f0800000000000000
+      internalID: -707115935151731705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_27
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 671
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7adb044c1f55b2d0800000000000000
+      internalID: -3263597779954705798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_28
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 644
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18dea518fd59b4fe0800000000000000
+      internalID: -1203703688211010175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_29
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 644
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ed375362ad04ead0800000000000000
+      internalID: -2673997287648707101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_30
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 653
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9861add5b9141e8b0800000000000000
+      internalID: -5124742765420603767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_31
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 653
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e114ad8061cb49b0800000000000000
+      internalID: -5094765933002223128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_32
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 662
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c53e7cbfea5d990800000000000000
+      internalID: -7361785619453617119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_33
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 599
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff2193f81b07638e0800000000000000
+      internalID: -1714058700253490433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_34
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 617
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a87f7d10a010b80800000000000000
+      internalID: -8430446024426288602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_35
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 617
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a2fd5b24ef774500800000000000000
+      internalID: 380413311492944553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_36
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 590
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8093cc53f4c38db10800000000000000
+      internalID: 2006419944896215304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_37
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 571
+        width: 40
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18fc777ffc4054950800000000000000
+      internalID: 6432552934025187201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_38
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 599
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f1c2ec3dd83b1bd0800000000000000
+      internalID: -2658468632171724302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_39
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 571
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df573699d658285c0800000000000000
+      internalID: -4214659595494001155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_40
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 580
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75612e7ddec4f9750800000000000000
+      internalID: 6313849787009603159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_41
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 554
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46d500001c0c46ba0800000000000000
+      internalID: -6096536060391563932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_42
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 563
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c4f8853495e3b870800000000000000
+      internalID: 8697547730098648265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_43
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 527
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d55327c425f555000800000000000000
+      internalID: 24030180094915933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_44
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 518
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85746a1aef6cbff0800000000000000
+      internalID: -19017247160502897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 527
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc344c1e95d0a7db0800000000000000
+      internalID: -4793504173691485235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_46
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 527
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f27a8c4cd660560800000000000000
+      internalID: 7279626539638402886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_47
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 518
+        width: 33
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c7e80c9b5e5beba0800000000000000
+      internalID: -6058645126144006204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_48
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 527
+        width: 49
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fabf4aa3a745aaf80800000000000000
+      internalID: -8094564496298411089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_49
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 509
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96fca9b12e8e46310800000000000000
+      internalID: 1397497842215079785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_50
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 527
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e2e7e41c46ca240800000000000000
+      internalID: 4804325683905834629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_51
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 499
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb09bb7ee82db9560800000000000000
+      internalID: 7321677130435891388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_52
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 491
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74bfe99eec1ebf6c0800000000000000
+      internalID: -4108441956246422713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_53
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 491
+        width: 40
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23617c05080b14390800000000000000
+      internalID: -7835787811490425294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_54
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 491
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc6a37c91cea7c500800000000000000
+      internalID: 416493637131806415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_55
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 482
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d8e05d2c4b8e5360800000000000000
+      internalID: 7160313616859719896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_56
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 473
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3ee52a437e537fc0800000000000000
+      internalID: -3498348636278493637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_57
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 464
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92c8dcf47a7bb6120800000000000000
+      internalID: 2408220354985954345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_58
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 427
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac2410b92e5b96c60800000000000000
+      internalID: 7811975013518623434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_59
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 383
+        width: 132
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac4791eea469e840800000000000000
+      internalID: 5253841142576270508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_60
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 446
+        width: 40
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ad6c7bc690c321f0800000000000000
+      internalID: -1070800532492489310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_61
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 410
+        width: 40
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd99ea57ba7f5ba20800000000000000
+      internalID: 3077638236163447263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_62
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 392
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df9cda538bedf890800000000000000
+      internalID: -7422517661439057959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_63
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 338
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96a2484f3804fbf10800000000000000
+      internalID: 2287618071214697065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_64
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 356
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e438a051461f75e80800000000000000
+      internalID: -8189811985197923506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_65
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 347
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55a7b6f7fc6f9aa50800000000000000
+      internalID: 6533024105534028373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_66
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 355
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f83809aac042100800000000000000
+      internalID: 82204619908026176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_67
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 347
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb78dfd13131c7640800000000000000
+      internalID: 5078955452595537854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_68
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 319
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1cb6ab7dd577c970800000000000000
+      internalID: 8775111993077447708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_69
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 329
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86dbfef835e248cd0800000000000000
+      internalID: -2556867752007582360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_70
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 311
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f7c2317e2fd1c00800000000000000
+      internalID: 873120977052794760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_71
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 320
+        width: 41
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a17642b9455416c0800000000000000
+      internalID: -4173617179653672543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_72
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 292
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f3b827d84b73860800000000000000
+      internalID: 7509669423268708188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_73
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 292
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b059a628fdf2bb0800000000000000
+      internalID: -4958498913484731604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_74
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 275
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43931381ee29228b0800000000000000
+      internalID: -5178415070216898252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_75
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 248
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed56e866306e1430800000000000000
+      internalID: 3755544926078000614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_76
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 292
+        width: 40
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0c840d7f5dcd6260800000000000000
+      internalID: 7092550798181436430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_77
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 230
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e012e05d6822ee9d0800000000000000
+      internalID: -2743217160526618354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_78
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 239
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db0a0d66eaec2df0800000000000000
+      internalID: -203529607745762343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_79
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 248
+        width: 23
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dbcdd93b0e8ceab0800000000000000
+      internalID: -4977447309284619308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_80
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 266
+        width: 40
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c967a3ace72696460800000000000000
+      internalID: 7235422573045642908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 20
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3744909d897b9b530800000000000000
+      internalID: 3871327221805827187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_82
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 215
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e415ad56145fc40a0800000000000000
+      internalID: -6895867268180586162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_83
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 87
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41b1279e53def2090800000000000000
+      internalID: -8056960392536909036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_84
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 203
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c3205b6b02532bf0800000000000000
+      internalID: -350346137006234680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_85
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 231
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60942a481f9ef6900800000000000000
+      internalID: 680019292277852422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_86
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 194
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f7d6725126970870800000000000000
+      internalID: 8649046679249934325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_87
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 131
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6b104096b98d9450800000000000000
+      internalID: 6097180887726693229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_88
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 203
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff1cfb5450a143610800000000000000
+      internalID: 1599932377570722303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_89
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 158
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5631831728979a0800000000000000
+      internalID: -6234808786334030343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_90
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 203
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 811d4739e3089db90800000000000000
+      internalID: -7216595921634275048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_91
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 203
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc208ecb09be031e0800000000000000
+      internalID: -2220015609416514865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_92
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 122
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a2ed65758dd50f0800000000000000
+      internalID: -1126506462141601186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_93
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 185
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89fd4e1108e1e8cf0800000000000000
+      internalID: -248227394053939304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_94
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 158
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8676463ba87b6ef0800000000000000
+      internalID: -113864688822487414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_95
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 95
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 763d655346d2f3a30800000000000000
+      internalID: 4197123286147453799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_96
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 140
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a81ce4198beb59120800000000000000
+      internalID: 2420050074702627210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_97
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 231
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee6b212d2d2442a0800000000000000
+      internalID: -6754223869295628565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_98
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 212
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4811a1f95a5d9b7f0800000000000000
+      internalID: -596210568334274172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_99
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 239
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0e9d49be42dfc80800000000000000
+      internalID: -8287427145058623261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_100
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 194
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bed85c5af41746e0800000000000000
+      internalID: -1853489656115962186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_101
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 131
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac3f7aa49faa8b080800000000000000
+      internalID: -9171392653463915574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_102
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 185
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4fe14959297234f0800000000000000
+      internalID: -850484161121489076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_103
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 239
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151c085fdc42a3e60800000000000000
+      internalID: 7942701359827042641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damaged_104
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 31
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e379dd55b16e2530800000000000000
+      internalID: 3832107764530377703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      damaged_0: 3865779245405396931
+      damaged_1: -6806755141263944071
+      damaged_10: -4068997835777397931
+      damaged_100: -1853489656115962186
+      damaged_101: -9171392653463915574
+      damaged_102: -850484161121489076
+      damaged_103: 7942701359827042641
+      damaged_104: 3832107764530377703
+      damaged_11: -448408129417960877
+      damaged_12: -8927369121469256896
+      damaged_13: 7940664978670994165
+      damaged_14: 7217209189522327908
+      damaged_15: 992338280747817975
+      damaged_16: -4954798691886683276
+      damaged_17: 9216018229398190847
+      damaged_18: 726882328034682960
+      damaged_19: 6351581948009461556
+      damaged_2: -4102841925239998255
+      damaged_20: 7889755981970353625
+      damaged_21: 4276768032161437549
+      damaged_22: -7062600564436639780
+      damaged_23: -7168560323944225296
+      damaged_24: 8498557719081837686
+      damaged_25: 6711984564151345996
+      damaged_26: -707115935151731705
+      damaged_27: -3263597779954705798
+      damaged_28: -1203703688211010175
+      damaged_29: -2673997287648707101
+      damaged_3: 229976294609435873
+      damaged_30: -5124742765420603767
+      damaged_31: -5094765933002223128
+      damaged_32: -7361785619453617119
+      damaged_33: -1714058700253490433
+      damaged_34: -8430446024426288602
+      damaged_35: 380413311492944553
+      damaged_36: 2006419944896215304
+      damaged_37: 6432552934025187201
+      damaged_38: -2658468632171724302
+      damaged_39: -4214659595494001155
+      damaged_4: -8036808465469291113
+      damaged_40: 6313849787009603159
+      damaged_41: -6096536060391563932
+      damaged_42: 8697547730098648265
+      damaged_43: 24030180094915933
+      damaged_44: -19017247160502897
+      damaged_45: -4793504173691485235
+      damaged_46: 7279626539638402886
+      damaged_47: -6058645126144006204
+      damaged_48: -8094564496298411089
+      damaged_49: 1397497842215079785
+      damaged_5: -3840802220300860508
+      damaged_50: 4804325683905834629
+      damaged_51: 7321677130435891388
+      damaged_52: -4108441956246422713
+      damaged_53: -7835787811490425294
+      damaged_54: 416493637131806415
+      damaged_55: 7160313616859719896
+      damaged_56: -3498348636278493637
+      damaged_57: 2408220354985954345
+      damaged_58: 7811975013518623434
+      damaged_59: 5253841142576270508
+      damaged_6: 6631632140554703921
+      damaged_60: -1070800532492489310
+      damaged_61: 3077638236163447263
+      damaged_62: -7422517661439057959
+      damaged_63: 2287618071214697065
+      damaged_64: -8189811985197923506
+      damaged_65: 6533024105534028373
+      damaged_66: 82204619908026176
+      damaged_67: 5078955452595537854
+      damaged_68: 8775111993077447708
+      damaged_69: -2556867752007582360
+      damaged_7: -3849542103520707673
+      damaged_70: 873120977052794760
+      damaged_71: -4173617179653672543
+      damaged_72: 7509669423268708188
+      damaged_73: -4958498913484731604
+      damaged_74: -5178415070216898252
+      damaged_75: 3755544926078000614
+      damaged_76: 7092550798181436430
+      damaged_77: -2743217160526618354
+      damaged_78: -203529607745762343
+      damaged_79: -4977447309284619308
+      damaged_8: 2512912169837372114
+      damaged_80: 7235422573045642908
+      damaged_81: 3871327221805827187
+      damaged_82: -6895867268180586162
+      damaged_83: -8056960392536909036
+      damaged_84: -350346137006234680
+      damaged_85: 680019292277852422
+      damaged_86: 8649046679249934325
+      damaged_87: 6097180887726693229
+      damaged_88: 1599932377570722303
+      damaged_89: -6234808786334030343
+      damaged_9: 5482888753692775456
+      damaged_90: -7216595921634275048
+      damaged_91: -2220015609416514865
+      damaged_92: -1126506462141601186
+      damaged_93: -248227394053939304
+      damaged_94: -113864688822487414
+      damaged_95: 4197123286147453799
+      damaged_96: 2420050074702627210
+      damaged_97: -6754223869295628565
+      damaged_98: -596210568334274172
+      damaged_99: -8287427145058623261
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
