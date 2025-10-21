@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3800542226065741909}
   - component: {fileID: 1929547688660205071}
   - component: {fileID: 2486467425627475395}
+  - component: {fileID: 6118610601718425776}
   m_Layer: 0
   m_Name: Emeny
   m_TagString: Untagged
@@ -169,6 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd59292a16d0042e598cc5e07382f49e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  maxHP: 3
   hp: 3
   scoreValue: 10
   moveSpeed: 2.5
@@ -186,3 +188,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMeleeAttack
   damage: 1
   hitCooldown: 0.6
+--- !u!114 &6118610601718425776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557989887563951259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb528e0022084a90878058bb6d039ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealthBar
+  hpBarPrefab: {fileID: 4215482578029766353, guid: ffece8413e0cc45a8b2bf6df55201c00, type: 3}
+  yOffset: 0.55
+  width: 1.2
+  height: 0.1
+  fillName: Fill
+  bgName: BG

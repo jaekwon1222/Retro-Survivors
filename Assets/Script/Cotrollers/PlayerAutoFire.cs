@@ -48,7 +48,7 @@ public class PlayerAutoFire : MonoBehaviour
     Enemy FindNearestEnemy()
     {
         // simple scan; optimize later if needed
-        Enemy[] enemies = FindObjectsOfType<Enemy>();
+        Enemy[] enemies = FindObjectsByType<Enemy>(FindObjectsSortMode.None);
         Enemy best = null;
         float bestSqr = Mathf.Infinity;
         Vector3 origin = muzzlePoint.position;

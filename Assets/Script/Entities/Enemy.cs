@@ -5,6 +5,7 @@ using System;
 public class Enemy : MonoBehaviour
 {
     [Header("Stats")]
+    public int maxHP = 3;   // ✅ 추가
     public int hp = 3;
     public int scoreValue = 10;
     public float moveSpeed = 2.5f;
@@ -19,11 +20,12 @@ public class Enemy : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0f;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+        hp = Mathf.Clamp(hp, 0, maxHP); // ✅ 초기화 보정
     }
 
     void Start()
     {
-        // find player by tag (Player 오브젝트에 Tag=Player 설정 필수)
         var p = GameObject.FindGameObjectWithTag("Player");
         if (p) player = p.transform;
     }
@@ -48,6 +50,5 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    // (옵션) 마우스 클릭으로 테스트용 데미지
     void OnMouseDown() => TakeDamage(1);
 }
