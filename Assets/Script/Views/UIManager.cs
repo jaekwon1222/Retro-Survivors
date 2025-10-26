@@ -7,11 +7,11 @@ using UnityEngine.SceneManagement;
 public class UIManager : Singleton<UIManager>
 {
     [Header("HUD Refs (Scene_Entry)")]
-    public Transform heartsParent;     // parent for heart icons (TopBar/Hearts)
-    public GameObject heartPrefab;     // prefab for a single heart (UI Image)
-    public TextMeshProUGUI waveText;   // Wave text (e.g., "Wave: 1")
-    public TextMeshProUGUI scoreText;  // Score text (e.g., "Score: 0")
-    public int maxHP = 10;             // max health points
+    public Transform heartsParent;       // parent for heart icons
+    public GameObject heartPrefab;       // prefab for one heart (UI Image)
+    public TextMeshProUGUI waveText;     // "Wave: n"
+    public TextMeshProUGUI scoreText;    // "Score: n"
+    public int maxHP = 10;               // maximum hearts
 
     private readonly List<Image> hearts = new List<Image>();
     private int currentHP;
@@ -21,7 +21,8 @@ public class UIManager : Singleton<UIManager>
     protected override void Awake()
     {
         base.Awake();
-        // UIManager should live only in Entry scene
+
+        // Live only in Entry scene
         if (SceneManager.GetActiveScene().name != "Scene_Entry")
         {
             Destroy(gameObject);
@@ -31,21 +32,25 @@ public class UIManager : Singleton<UIManager>
 
     void Start()
     {
-        // init HUD at scene start
+        // Init HUD
         InitHearts(maxHP);
         SetHP(maxHP);
         SetWave(1);
         SetScore(0);
     }
 
-    // -------- HP / Hearts --------
+    // ---------------- HP / Hearts ----------------
+
     public void InitHearts(int count)
     {
         if (!heartsParent || !heartPrefab) return;
 
-        foreach (Transform c in heartsParent) Destroy(c.gameObject);
+        // Clear old
+        foreach (Transform c in heartsParent)
+            Destroy(c.gameObject);
         hearts.Clear();
 
+        // Build new
         for (int i = 0; i < count; i++)
         {
             var go = Instantiate(heartPrefab, heartsParent);
@@ -58,25 +63,37 @@ public class UIManager : Singleton<UIManager>
     {
         currentHP = Mathf.Clamp(hp, 0, maxHP);
 
-        // show only remaining hearts
+        // Toggle heart visibility by remaining HP
         for (int i = 0; i < hearts.Count; i++)
-            hearts[i].enabled = i < currentHP;
+            hearts[i].enabled = (i < currentHP);
     }
 
     public void Damage(int amount = 1)
-{
-    Debug.Log($"[UIManager] Damage before={currentHP}, after={currentHP - amount}, hearts={hearts.Count}"); // 로그 3
-    SetHP(currentHP - amount);
-    if (currentHP <= 0)
     {
-        Debug.Log("Player Dead");
-        // TODO: show game over UI
+        // Debug.Log($"[UIManager] Damage {amount} (before {currentHP})");
+        SetHP(currentHP - amount);
+
+        if (currentHP <= 0)
+        {
+            // TODO: show game over UI
+            Debug.Log("[UIManager] Player Dead");
+        }
     }
-}
 
-    public void Heal(int amount = 1) => SetHP(currentHP + amount);
+    // Heal by amount (clamped in SetHP)
+    public void Heal(int amount = 1)
+    {
+        SetHP(currentHP + amount);
+    }
 
-    // -------- Wave / Score --------
+    // Full heal to max
+    public void FullHeal()
+    {
+        SetHP(maxHP);
+    }
+
+    // ---------------- Wave / Score ----------------
+
     public void SetWave(int wave)
     {
         currentWave = Mathf.Max(1, wave);
@@ -94,7 +111,8 @@ public class UIManager : Singleton<UIManager>
         SetScore(currentScore + delta);
     }
 
-    // -------- Buttons --------
+    // ---------------- Buttons ----------------
+
     public void OnClickBackToMenu()
     {
         SceneManager.LoadScene("Scene_MainMenu");

@@ -29,4 +29,11 @@ public class PlayerMovement : MonoBehaviour
         // Apply velocity for smooth physics-based movement
         rb.linearVelocity = moveInput * moveSpeed;
     }
+
+    // === Upgrade hook ===
+// Multiplies current move speed (e.g., 1.05f = +5%)
+public void AddSpeedMultiplier(float multiplier)
+{
+    moveSpeed *= multiplier;     // uses moveSpeed
+}
 }

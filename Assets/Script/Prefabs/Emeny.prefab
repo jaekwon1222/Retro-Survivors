@@ -173,7 +173,7 @@ MonoBehaviour:
   maxHP: 3
   hp: 3
   scoreValue: 10
-  moveSpeed: 2.5
+  moveSpeed: 10
 --- !u!114 &2486467425627475395
 MonoBehaviour:
   m_ObjectHideFlags: 0

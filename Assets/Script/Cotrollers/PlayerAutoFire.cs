@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Reflection; // for safe reflection calls
+using System.Collections.Generic;
 
 public class PlayerAutoFire : MonoBehaviour
 {
@@ -13,6 +15,11 @@ public class PlayerAutoFire : MonoBehaviour
     public bool rotateProjectile = true;  // rotate to flight direction
     public float spawnOffset = 0.25f;     // push spawn forward to avoid overlap
 
+    [Header("Stats (Upgradable)")]
+    [SerializeField] private int projectileDamage = 1;   // bullet damage
+    [SerializeField] private int projectileCount = 1;    // bullets per shot
+    [SerializeField] private float hitRadius = 0f;       // area hit radius on impact (0 = single target)
+
     float timer;
 
     void Start()
@@ -26,56 +33,124 @@ public class PlayerAutoFire : MonoBehaviour
         timer += Time.deltaTime;
         if (timer < fireInterval) return;
 
-        Enemy target = FindNearestEnemy();
-        if (target == null && requireEnemyInRange)
+        Enemy[] targets = FindClosestEnemies(projectileCount);
+        if (targets.Length == 0)
         {
-            timer = 0f; // skip this cycle
-            return;
+            if (requireEnemyInRange)
+            {
+                timer = 0f; // skip this cycle if nothing to shoot
+                return;
+            }
+            else
+            {
+                // fire forward even without target (optional behavior)
+                Vector3 spawn = muzzlePoint.position;
+                Vector2 dir = (Vector2)transform.right;
+                spawn += (Vector3)(dir * spawnOffset);
+                ShootSingle(dir, spawn);
+                timer = 0f;
+                return;
+            }
         }
 
-        Vector3 spawn = muzzlePoint.position;
-        Vector2 dir = target
-            ? (target.transform.position - spawn).normalized
-            : (Vector2)transform.right;
+        // Fire one projectile per target
+        foreach (var target in targets)
+        {
+            if (!target) continue;
+            Vector3 spawn = muzzlePoint.position;
+            Vector2 dir = (target.transform.position - spawn).normalized;
+            spawn += (Vector3)(dir * spawnOffset);
+            ShootSingle(dir, spawn);
+        }
 
-        // spawn slightly in front to avoid instant collisions
-        spawn += (Vector3)(dir * spawnOffset);
-
-        Shoot(dir, spawn);
         timer = 0f;
     }
 
-    Enemy FindNearestEnemy()
+    // Find up to 'count' closest enemies within detectRadius
+    Enemy[] FindClosestEnemies(int count)
     {
-        // simple scan; optimize later if needed
-        Enemy[] enemies = FindObjectsByType<Enemy>(FindObjectsSortMode.None);
-        Enemy best = null;
-        float bestSqr = Mathf.Infinity;
-        Vector3 origin = muzzlePoint.position;
+        var enemies = FindObjectsByType<Enemy>(FindObjectsSortMode.None);
+        var list = new List<Enemy>();
+        Vector3 origin = muzzlePoint ? muzzlePoint.position : transform.position;
+        float maxSqr = detectRadius * detectRadius;
 
         foreach (var e in enemies)
         {
             if (!e || !e.isActiveAndEnabled || e.hp <= 0) continue;
             float sqr = (e.transform.position - origin).sqrMagnitude;
-            if (sqr < bestSqr && sqr <= detectRadius * detectRadius)
-            {
-                bestSqr = sqr;
-                best = e;
-            }
+            if (sqr <= maxSqr) list.Add(e);
         }
-        return best;
+
+        list.Sort((a, b) =>
+        {
+            float da = (a.transform.position - origin).sqrMagnitude;
+            float db = (b.transform.position - origin).sqrMagnitude;
+            return da.CompareTo(db);
+        });
+
+        if (list.Count > count)
+            list = list.GetRange(0, count);
+
+        return list.ToArray();
     }
 
-    void Shoot(Vector2 dir, Vector3 spawn)
+    void ShootSingle(Vector2 dir, Vector3 spawn)
     {
-        if (!projectilePrefab) { Debug.LogWarning("[AutoFire] projectilePrefab missing"); return; }
+        if (!projectilePrefab)
+        {
+            Debug.LogWarning("[AutoFire] projectilePrefab missing");
+            return;
+        }
 
         var proj = Instantiate(projectilePrefab, spawn, Quaternion.identity);
+
         if (rotateProjectile && dir.sqrMagnitude > 0.0001f)
         {
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             proj.transform.rotation = Quaternion.Euler(0f, 0f, angle);
         }
-        proj.Fire(dir);
+
+        // apply stats and call Fire using a safe, API-flexible path
+        ApplyStatsAndFire(proj, dir);
     }
+
+    // Try to call the most specific Projectile API available.
+    // 1) Fire(Vector2, int, float)  -> damage + aoe supported
+    // 2) Fire(Vector2) + set public fields "damage"/"aoeRadius" via reflection
+    // 3) As fallback, just Fire(Vector2) if available
+    void ApplyStatsAndFire(Projectile proj, Vector2 dir)
+    {
+        var t = proj.GetType();
+
+        // Try Fire(Vector2, int, float)
+        var m3 = t.GetMethod("Fire", new[] { typeof(Vector2), typeof(int), typeof(float) });
+        if (m3 != null)
+        {
+            m3.Invoke(proj, new object[] { dir, projectileDamage, hitRadius });
+            return;
+        }
+
+        // Try set fields if they exist
+        var fDamage = t.GetField("damage", BindingFlags.Public | BindingFlags.Instance);
+        if (fDamage != null) fDamage.SetValue(proj, projectileDamage);
+
+        var fAoe = t.GetField("aoeRadius", BindingFlags.Public | BindingFlags.Instance);
+        if (fAoe != null) fAoe.SetValue(proj, hitRadius);
+
+        // Then call Fire(Vector2)
+        var m1 = t.GetMethod("Fire", new[] { typeof(Vector2) });
+        if (m1 != null)
+        {
+            m1.Invoke(proj, new object[] { dir });
+            return;
+        }
+
+        // If no Fire method exists at all, log a warning (won't break compile)
+        Debug.LogWarning("[AutoFire] Projectile has no compatible Fire() method.");
+    }
+
+    // === Upgrade hooks ===
+    public void AddDamage(int delta)            { projectileDamage += delta; }
+    public void AddProjectiles(int delta)       { projectileCount = Mathf.Max(1, projectileCount + delta); }
+    public void AddHitRadius(float delta)       { hitRadius = Mathf.Max(0f, hitRadius + delta); }
 }
