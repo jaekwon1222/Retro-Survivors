@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
@@ -12,10 +13,16 @@ public class Projectile : MonoBehaviour
     [Tooltip("Splash damage radius on hit (0 = single target)")]
     public float aoeRadius = 0f;
 
+    [Tooltip("How many extra enemies this projectile can pass through (0 = hits 1 enemy)")]
+    public int pierce = 0;
+
     [SerializeField] LayerMask enemyMask; // optional: leave empty to hit everything with Enemy component
 
     Vector2 _dir = Vector2.right;
     Rigidbody2D _rb;
+
+    HashSet<Enemy> _alreadyHit = new HashSet<Enemy>();
+    int enemiesHit = 0;
 
     void Awake()
     {
@@ -43,12 +50,14 @@ public class Projectile : MonoBehaviour
     {
         _dir = direction.normalized;
         if (_rb) _rb.linearVelocity = _dir * speed;
+        Debug.Log($"[Projectile] Fire() instance {GetInstanceID()} dir:{_dir} speed:{speed} pierce:{pierce} damage:{damage} aoe:{aoeRadius}");
+
     }
 
     // --- API 2: full (used when available) ---
     public void Fire(Vector2 direction, int dmg, float hitRadius)
     {
-        damage    = dmg;
+        damage = dmg;
         aoeRadius = Mathf.Max(0f, hitRadius);
         Fire(direction); // sets dir/velocity
     }
@@ -57,8 +66,14 @@ public class Projectile : MonoBehaviour
     {
         var enemy = other.GetComponent<Enemy>();
         if (!enemy) return;
+        if (_alreadyHit.Contains(enemy)) return; // prevent double damage on same enemy
 
-        // direct hit
+        _alreadyHit.Add(enemy);
+        enemiesHit++;
+
+        Debug.Log($"[Projectile] Instance {GetInstanceID()} hit Enemy {enemy.name} (hp:{enemy.hp}). enemiesHit={enemiesHit} pierce={pierce}");
+
+
         enemy.TakeDamage(damage);
 
         // splash
@@ -67,14 +82,24 @@ public class Projectile : MonoBehaviour
             var hits = Physics2D.OverlapCircleAll(transform.position, aoeRadius,
                 enemyMask.value == 0 ? Physics2D.DefaultRaycastLayers : enemyMask);
 
-            for (int i = 0; i < hits.Length; i++)
+            foreach (var hit in hits)
             {
-                var e = hits[i].GetComponent<Enemy>();
-                if (e) e.TakeDamage(damage);
+                var e = hit.GetComponent<Enemy>();
+                if (e && !_alreadyHit.Contains(e))
+                {
+                    e.TakeDamage(damage);
+                    _alreadyHit.Add(e);
+                    Debug.Log($"[Projectile]  AO E damaged Enemy {e.name}");
+                }
             }
         }
 
-        Destroy(gameObject);
+        // destroy only after exceeding pierce
+        if (enemiesHit >= pierce)
+        {
+            Debug.Log($"[Projectile] Instance {GetInstanceID()} exceeded pierce ({pierce}) and will be destroyed.");
+            Destroy(gameObject);
+        }
     }
 
 #if UNITY_EDITOR

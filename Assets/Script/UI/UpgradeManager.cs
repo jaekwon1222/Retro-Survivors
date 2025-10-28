@@ -21,6 +21,8 @@ public class UpgradeManager : MonoBehaviour
 
     Action _onChosen;                     // callback from WaveManager
     System.Random _rng = new System.Random();
+    int powerLevel = 0;
+    const int powerMax = 2;
 
     class UpgradeOption
     {
@@ -44,13 +46,41 @@ public class UpgradeManager : MonoBehaviour
         // Initialize all weighted upgrade options
         allOptions = new List<UpgradeOption>
         {
-            new UpgradeOption("Power +1", () => { if (autoFire) autoFire.AddDamage(1); }, 23f),
+            new UpgradeOption("Power +1", () =>
+            {
+                if (autoFire)
+                {
+                    powerLevel++;
+                    autoFire.AddDamage(1);
+                    Debug.Log($"[Upgrade] Power increased to level {powerLevel}/{powerMax}");
+
+                    // Once maxed, remove from available upgrades
+                    if (powerLevel >= powerMax)
+                    {
+                        var opt = allOptions.Find(o => o.title == "Power +1");
+                        if (opt != null)
+                        {
+                            allOptions.Remove(opt);
+                            Debug.Log("[Upgrade] Power +1 removed (max level reached)");
+                        }
+                    }
+                }
+            }, 23f),
             new UpgradeOption("Move Speed +5%", () => { if (movement) movement.AddSpeedMultiplier(1.05f); }, 23f),
             new UpgradeOption("Heal +1 Heart", () => { if (ui) ui.Heal(1); }, 23f),
 
             new UpgradeOption("Projectiles +1", () => { IncreaseProjectilesSafe(1); }, 10f),
             new UpgradeOption("Full Heal", () => { if (ui) ui.SetHP(ui.maxHP); }, 10f),
-            new UpgradeOption("Big Hit Radius +0.2", () => { if (autoFire) autoFire.AddHitRadius(0.2f); }, 10f)
+            new UpgradeOption("Big Hit Radius +0.2", () => { if (autoFire) autoFire.AddHitRadius(0.2f); }, 10f),
+            new UpgradeOption("Pierce +1", () => { if (autoFire) autoFire.AddPierce(1); }, 10f),
+            new UpgradeOption("Attack Speed +10%", () =>
+            {
+                if (autoFire)
+                {
+                    autoFire.AddFireRateMultiplier(1.10f);
+                    Debug.Log("[Upgrade] Fire rate increased by 10%");
+                }
+            }, 10f)
         };
     }
 

@@ -19,6 +19,7 @@ public class PlayerAutoFire : MonoBehaviour
     [SerializeField] private int projectileDamage = 1;   // bullet damage
     [SerializeField] private int projectileCount = 1;    // bullets per shot
     [SerializeField] private float hitRadius = 0f;       // area hit radius on impact (0 = single target)
+    [SerializeField] private int projectilePierce = 0;
 
     float timer;
 
@@ -26,6 +27,9 @@ public class PlayerAutoFire : MonoBehaviour
     {
         if (!muzzlePoint) muzzlePoint = transform;
         timer = fireInterval; // first shot after interval
+
+        projectilePierce = 1;
+        Debug.Log($"[PlayerAutoFire] Start() projectilePierce={projectilePierce}");
     }
 
     void Update()
@@ -103,6 +107,7 @@ public class PlayerAutoFire : MonoBehaviour
         }
 
         var proj = Instantiate(projectilePrefab, spawn, Quaternion.identity);
+        Debug.Log($"[PlayerAutoFire] Spawned projectile {proj.GetInstanceID()} at {spawn} towards {dir}");
 
         if (rotateProjectile && dir.sqrMagnitude > 0.0001f)
         {
@@ -120,37 +125,42 @@ public class PlayerAutoFire : MonoBehaviour
     // 3) As fallback, just Fire(Vector2) if available
     void ApplyStatsAndFire(Projectile proj, Vector2 dir)
     {
-        var t = proj.GetType();
+        // Direct assignment (best, clear)
+        proj.damage = projectileDamage;
+        proj.aoeRadius = hitRadius;
+        proj.pierce = projectilePierce;
 
-        // Try Fire(Vector2, int, float)
+        Debug.Log($"[PlayerAutoFire] Applied stats -> dmg:{projectileDamage} aoe:{hitRadius} pierce:{projectilePierce} to projectile instance {proj.GetInstanceID()}");
+
+        // Call most specific Fire API if available
+        var t = proj.GetType();
         var m3 = t.GetMethod("Fire", new[] { typeof(Vector2), typeof(int), typeof(float) });
         if (m3 != null)
         {
             m3.Invoke(proj, new object[] { dir, projectileDamage, hitRadius });
             return;
         }
-
-        // Try set fields if they exist
-        var fDamage = t.GetField("damage", BindingFlags.Public | BindingFlags.Instance);
-        if (fDamage != null) fDamage.SetValue(proj, projectileDamage);
-
-        var fAoe = t.GetField("aoeRadius", BindingFlags.Public | BindingFlags.Instance);
-        if (fAoe != null) fAoe.SetValue(proj, hitRadius);
-
-        // Then call Fire(Vector2)
         var m1 = t.GetMethod("Fire", new[] { typeof(Vector2) });
         if (m1 != null)
         {
             m1.Invoke(proj, new object[] { dir });
             return;
         }
-
-        // If no Fire method exists at all, log a warning (won't break compile)
-        Debug.LogWarning("[AutoFire] Projectile has no compatible Fire() method.");
     }
 
     // === Upgrade hooks ===
-    public void AddDamage(int delta)            { projectileDamage += delta; }
-    public void AddProjectiles(int delta)       { projectileCount = Mathf.Max(1, projectileCount + delta); }
-    public void AddHitRadius(float delta)       { hitRadius = Mathf.Max(0f, hitRadius + delta); }
+    public void AddDamage(int delta) { projectileDamage += delta; }
+    public void AddProjectiles(int delta) { projectileCount = Mathf.Max(1, projectileCount + delta); }
+    public void AddHitRadius(float delta) { hitRadius = Mathf.Max(0f, hitRadius + delta); }
+
+    public void AddPierce(int delta)
+    {
+        projectilePierce = Mathf.Max(0, projectilePierce + delta);
+    }
+
+    public void AddFireRateMultiplier(float multiplier)
+    {
+        fireInterval /= multiplier; 
+        Debug.Log($"[PlayerAutoFire] Fire interval changed -> {fireInterval:F3}s (faster by x{multiplier})");
+    }
 }
