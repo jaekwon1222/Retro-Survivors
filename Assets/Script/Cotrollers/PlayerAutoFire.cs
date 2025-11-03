@@ -152,6 +152,7 @@ public class PlayerAutoFire : MonoBehaviour
 
         // apply stats and call Fire using a safe, API-flexible path
         ApplyStatsAndFire(proj, dir);
+        SFXManager.Instance?.PlayShoot(); // play shoot sfx
     }
 
     // Try to call the most specific Projectile API available.

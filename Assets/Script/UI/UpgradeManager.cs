@@ -141,6 +141,7 @@ public class UpgradeManager : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         panel.SetActive(true);
+        SFXManager.Instance?.PlayUpgradeOpen(); // play sfx when upgrade panel opens
 
         for (int i = 0; i < optionButtons.Length; i++)
         {

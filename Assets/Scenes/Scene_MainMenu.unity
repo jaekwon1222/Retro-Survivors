@@ -1382,16 +1382,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1325149808}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 081746ea9e1d142c3b1a33d893668c6c, type: 3}
+  m_Script: {fileID: 11500000, guid: 7012fe4db525147c98e97ed65141eadf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SFXManager
-  oneShotSource: {fileID: 1325149811}
-  shootClip: {fileID: 8300000, guid: 88eeaa676273e4482843cd8a69a11600, type: 3}
-  hitClip: {fileID: 8300000, guid: 2d2005ed8fbb74033a317835cdf914f6, type: 3}
-  upgradeOpenClip: {fileID: 8300000, guid: b5b8a53e94d0c44998c59bdac20e50af, type: 3}
-  enemyDieClip: {fileID: 8300000, guid: 3231493bff4ba4757bc499f33e9757ed, type: 3}
-  healClip: {fileID: 8300000, guid: 64ae22d60994643998df6d7b314e43a9, type: 3}
-  clickClip: {fileID: 8300000, guid: 563109b67926a4ad091adf74f3c6dbc6, type: 3}
+  oneShot: {fileID: 1325149811}
+  sfxShoot: {fileID: 8300000, guid: 88eeaa676273e4482843cd8a69a11600, type: 3}
+  sfxHit: {fileID: 8300000, guid: 64ae22d60994643998df6d7b314e43a9, type: 3}
+  sfxUpgradeOpen: {fileID: 8300000, guid: b5b8a53e94d0c44998c59bdac20e50af, type: 3}
+  sfxEnemyDie: {fileID: 8300000, guid: 3231493bff4ba4757bc499f33e9757ed, type: 3}
+  sfxHeal: {fileID: 8300000, guid: 2d2005ed8fbb74033a317835cdf914f6, type: 3}
+  sfxClick: {fileID: 8300000, guid: 563109b67926a4ad091adf74f3c6dbc6, type: 3}
 --- !u!4 &1325149810
 Transform:
   m_ObjectHideFlags: 0

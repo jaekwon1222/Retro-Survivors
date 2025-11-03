@@ -63,6 +63,7 @@ public class UIManager : Singleton<UIManager>
     public void Damage(int amount = 1)
     {
         SetHP(currentHP - amount);
+        SFXManager.Instance?.PlayHit(); // play hit sfx
         if (currentHP <= 0)
         {
             Debug.Log("[UIManager] Player Dead");
@@ -70,9 +71,17 @@ public class UIManager : Singleton<UIManager>
         }
     }
 
-    public void Heal(int amount = 1) => SetHP(currentHP + amount);
+    public void Heal(int amount = 1)
+    {
+        SetHP(currentHP + amount);
+        SFXManager.Instance?.PlayHeal(); // play heal sfx
+    }
 
-    public void FullHeal() => SetHP(maxHP);
+    public void FullHeal()
+    {
+        SetHP(maxHP);
+        SFXManager.Instance?.PlayHeal(); // play full heal sfx
+    }
 
     // ---------------- Wave / Score ----------------
     public void SetWave(int wave)
