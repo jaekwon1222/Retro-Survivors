@@ -14,6 +14,8 @@ public class PlayerAutoFire : MonoBehaviour
     public bool requireEnemyInRange = true; // fire only if enemy found
     public bool rotateProjectile = true;  // rotate to flight direction
     public float spawnOffset = 0.25f;     // push spawn forward to avoid overlap
+    public WeaponController weaponController;
+
 
     [Header("Stats (Upgradable)")]
     [SerializeField] private int projectileDamage = 1;   // bullet damage
@@ -34,6 +36,14 @@ public class PlayerAutoFire : MonoBehaviour
 
     void Update()
     {
+
+        Enemy aimTarget = FindClosestEnemy(); // helper method below
+        if (aimTarget && weaponController)
+        {
+            Vector2 dir = (aimTarget.transform.position - transform.position).normalized;
+            weaponController.Aim(dir);
+        }
+
         timer += Time.deltaTime;
         if (timer < fireInterval) return;
 
@@ -64,10 +74,35 @@ public class PlayerAutoFire : MonoBehaviour
             Vector3 spawn = muzzlePoint.position;
             Vector2 dir = (target.transform.position - spawn).normalized;
             spawn += (Vector3)(dir * spawnOffset);
+
+            if (weaponController)
+                weaponController.Aim(dir);
+
             ShootSingle(dir, spawn);
         }
 
         timer = 0f;
+    }
+
+    Enemy FindClosestEnemy()
+    {
+        var enemies = FindObjectsByType<Enemy>(FindObjectsSortMode.None);
+        Enemy closest = null;
+        float minDist = Mathf.Infinity;
+        Vector3 origin = muzzlePoint ? muzzlePoint.position : transform.position;
+
+        foreach (var e in enemies)
+        {
+            if (!e || !e.isActiveAndEnabled || e.hp <= 0) continue;
+            float dist = (e.transform.position - origin).sqrMagnitude;
+            if (dist < minDist)
+            {
+                minDist = dist;
+                closest = e;
+            }
+        }
+
+        return closest;
     }
 
     // Find up to 'count' closest enemies within detectRadius
