@@ -4202,6 +4202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1769269851}
   - component: {fileID: 1769269850}
+  - component: {fileID: 1769269852}
   m_Layer: 0
   m_Name: BGworld
   m_TagString: Untagged
@@ -4282,6 +4283,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1769269852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769269849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 284d210c41bcf4d97b70e70718817def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InfiniteTiledBackground
+  sprite: {fileID: 3748201956395044800, guid: 26e02a492104945e5b5444f000c2e4bf, type: 3}
+  cam: {fileID: 0}
+  sortingLayerName: Background
+  orderInLayer: -10
 --- !u!1 &1909500056
 GameObject:
   m_ObjectHideFlags: 0
