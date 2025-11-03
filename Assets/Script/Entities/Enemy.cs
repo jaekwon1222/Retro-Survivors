@@ -46,6 +46,18 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         GameManager.Instance.AddScore(scoreValue);
+
+        // --- Track total kills ---
+        int kills = PlayerPrefs.GetInt("TotalKills", 0) + 1;
+        PlayerPrefs.SetInt("TotalKills", kills);
+
+        // Check for kill-based achievement unlock
+        if (kills >= 5 && PlayerPrefs.GetInt("Achievement_5Kills", 0) == 0)
+        {
+            PlayerPrefs.SetInt("Achievement_5Kills", 1);
+            Debug.Log("[Achievement] 5 Kills unlocked!");
+        }
+
         OnDead?.Invoke(this);
         Destroy(gameObject);
     }

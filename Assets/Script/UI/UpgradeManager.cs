@@ -212,4 +212,15 @@ public class UpgradeManager : MonoBehaviour
             Debug.Log($"[UpgradeManager] projectileCount: {cur} -> {next}");
         }
     }
+
+    void Start()
+    {
+        // Give bonus projectile if achievement reward is claimed
+        if (PlayerPrefs.GetInt("Reward_ExtraProjectile", 0) == 1)
+        {
+            Debug.Log("[Bonus] Applying extra projectile from achievement");
+            IncreaseProjectilesSafe(1);
+        }
+    }
+
 }

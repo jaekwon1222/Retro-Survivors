@@ -9,6 +9,23 @@ public class MainMenuController : MonoBehaviour
         SceneManager.LoadScene("Scene_Entry");
     }
 
+    public void OnClickClearStats()
+    {
+        PlayerPrefs.SetInt("Achievement_5Kills", 0);
+        PlayerPrefs.SetInt("Reward_ExtraProjectile", 0);
+        PlayerPrefs.SetInt("TotalKills", 0);
+    }
+
+    public void OnClickAchievements()
+    {
+        SceneManager.LoadScene("Achievements_Scene");
+    }
+
+    public void OnClickBack()
+    {
+        SceneManager.LoadScene("Scene_MainMenu");
+    }
+
     // Quit app (Editor stops Play)
     public void OnClickQuit()
     {
