@@ -112,7 +112,45 @@
 - Finalized **Upgrade Panel sound effect** (triggered once per panel open).
 
 ---
+## 12. UI & Gameplay Enhancements
 
+- **Main Menu UI Overhaul**
+  - Replaced all image-based buttons with standard Unity TMP Buttons for visual consistency.
+  - Added hover and pressed color transitions:
+    - Normal: `#2D6BFF`
+    - Highlighted: `#5C8CFF`
+    - Pressed: `#1E4FCC`
+  - Re-linked all MainMenuController button events:
+    - **Start** → loads `Scene_Entry`
+    - **Settings** → opens Settings Panel
+    - **Quit** → exits the application
+
+- **Settings Panel Implementation**
+  - Created new UI panel containing:
+    - Music Volume Slider → connected to `MusicManager.SetVolume()`
+    - SFX Volume Slider → connected to `SFXManager.SetVolume()`
+    - Mute Toggle → controls both music and SFX
+    - Back Button → returns to main menu
+  - Adjusted text alignment and toggle positioning for better visibility.
+
+- **Upgrade Status Panel (In-Game HUD)**
+  - Added top-left panel displaying real-time upgrade information:
+    - Projectiles
+    - Power
+    - Fire Rate
+    - Move Speed
+    - Hit Radius
+    - Pierce
+  - Implemented `UpgradeStatusPanel.cs` for automatic data updates every 0.2s.
+  - Added support for `ProjectilePierce` and `FireInterval` in `PlayerAutoFire`.
+  - Added `CurrentSpeed` property to `PlayerMovement` for live MoveSpeed display.
+
+- **UI & Gameplay Integration**
+  - Verified all upgrade stats correctly sync between UI and gameplay.
+  - Adjusted font sizes and formatting for improved readability.
+  - Tested full gameplay flow to ensure no data delay or desync between upgrades and display.
+
+---
 📘 **Next Version Goal (v0.8.0 - Boss & Advanced Waves)**  
 - Add boss spawn every 5 waves.  
 - Implement special attack patterns.  
