@@ -84,4 +84,12 @@ public class MusicManager : MonoBehaviour
             yield return null;
         }
     }
+
+    public void SetVolume(float v)
+    {
+        if (!source) return;
+        source.volume = Mathf.Clamp01(v);
+    }
+
+    public float GetVolume() => source ? source.volume : 1f;
 }

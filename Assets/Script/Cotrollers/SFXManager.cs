@@ -54,12 +54,12 @@ public class SFXManager : MonoBehaviour
     }
 
     // --- One-shot helpers ---
-    public void PlayShoot()        { Play(sfxShoot); }
-    public void PlayHit()          { Play(sfxHit); }
-    public void PlayUpgradeOpen()  { Play(sfxUpgradeOpen); }
-    public void PlayEnemyDie()     { Play(sfxEnemyDie); }
-    public void PlayHeal()         { Play(sfxHeal); }
-    public void PlayClick()        { Play(sfxClick); }
+    public void PlayShoot() { Play(sfxShoot); }
+    public void PlayHit() { Play(sfxHit); }
+    public void PlayUpgradeOpen() { Play(sfxUpgradeOpen); }
+    public void PlayEnemyDie() { Play(sfxEnemyDie); }
+    public void PlayHeal() { Play(sfxHeal); }
+    public void PlayClick() { Play(sfxClick); }
 
     void Play(AudioClip clip)
     {
@@ -80,4 +80,12 @@ public class SFXManager : MonoBehaviour
             mgr.oneShot = src;
         }
     }
+    public void SetVolume(float v)
+    {
+        if (!oneShot) return;
+        oneShot.volume = Mathf.Clamp01(v);
+    }
+
+    public float GetVolume() => oneShot ? oneShot.volume : 1f;
 }
+
