@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        // Initialize Rigidbody2D component reference
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -31,9 +32,13 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // === Upgrade hook ===
-// Multiplies current move speed (e.g., 1.05f = +5%)
-public void AddSpeedMultiplier(float multiplier)
-{
-    moveSpeed *= multiplier;     // uses moveSpeed
-}
+    // Multiplies current move speed (e.g., 1.05f = +5%)
+    public void AddSpeedMultiplier(float multiplier)
+    {
+        moveSpeed *= multiplier;     // uses moveSpeed
+        Debug.Log($"Speed updated to: {moveSpeed}");
+    }
+
+    // Returns current movement speed (used by UpgradeStatusPanel)
+    public float CurrentSpeed => moveSpeed;
 }

@@ -196,7 +196,19 @@ public class PlayerAutoFire : MonoBehaviour
 
     public void AddFireRateMultiplier(float multiplier)
     {
-        fireInterval /= multiplier; 
+        fireInterval /= multiplier;
         Debug.Log($"[PlayerAutoFire] Fire interval changed -> {fireInterval:F3}s (faster by x{multiplier})");
     }
+    
+    // === Exposed read-only values for UI ===
+public int ProjectileCount => projectileCount;        // # of bullets per shot
+public int ProjectileDamage => projectileDamage;      // damage per bullet
+public float HitRadius => hitRadius;                  // AoE radius
+    public float FireRatePerSec => 1f / Mathf.Max(0.001f, fireInterval); // shots per second
+
+  // Expose current fire interval (seconds) for UI panels
+  public float FireInterval => fireInterval;
+  // Expose current pierce count for UI panels
+  public int ProjectilePierce => projectilePierce;
+    
 }
