@@ -150,6 +150,23 @@
   - Adjusted font sizes and formatting for improved readability.
   - Tested full gameplay flow to ensure no data delay or desync between upgrades and display.
 
+## 13. Game Over System
+
+Implemented a complete Game Over system triggered when the player's HP reaches zero.
+
+### Features
+- Added GameOverPanel UI with dark overlay, “You Died” message, and two buttons:
+  - **Restart**
+  - **Main Menu**
+- Gameplay now pauses on death (Time.timeScale = 0).
+- Mouse cursor becomes visible and unlocked on death.
+- Restart button:
+  - Restores time scale
+  - Reloads Scene_Entry
+  - Resets all HP and player stats
+  - Recreates a fresh UIManager instance
+- Main Menu button returns to Scene_MainMenu with proper cursor handling.
+- Fixed issue where hearts did not reset on restart.
 ---
 📘 **Next Version Goal (v0.8.0 - Boss & Advanced Waves)**  
 - Add boss spawn every 5 waves.  
