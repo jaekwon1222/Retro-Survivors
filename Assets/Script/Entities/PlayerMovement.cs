@@ -41,4 +41,10 @@ public class PlayerMovement : MonoBehaviour
 
     // Returns current movement speed (used by UpgradeStatusPanel)
     public float CurrentSpeed => moveSpeed;
+
+    // === Reset movement speed to base value (used on restart) ===
+    public void ResetStats()
+    {
+        moveSpeed = 5f;   // base movement speed
+    }
 }

@@ -210,5 +210,15 @@ public float HitRadius => hitRadius;                  // AoE radius
   public float FireInterval => fireInterval;
   // Expose current pierce count for UI panels
   public int ProjectilePierce => projectilePierce;
+
+    // === Reset all upgradeable stats to their base values (used on restart) ===
+    public void ResetStats()
+    {
+        projectileDamage = 1;      // base damage
+        projectileCount = 1;       // single projectile
+        hitRadius = 0f;            // no AoE
+        projectilePierce = 1;      // base pierce
+        fireInterval = 1.0f;       // base fire interval in seconds
+    }
     
 }
