@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     [Header("Stats")]
     public int maxHP = 3;   
     public int hp = 3;
+    public int contactDamage = 1;   // damage dealt to player on contact
     public int scoreValue = 10;
     public float moveSpeed = 2.5f;
 
@@ -62,6 +63,31 @@ public class Enemy : MonoBehaviour
         SFXManager.Instance?.PlayEnemyDie(); // play enemy death sfx
         Destroy(gameObject);
     }
+
+void OnTriggerEnter2D(Collider2D other)
+{
+    // only react to player
+    if (!other.CompareTag("Player")) return;
+
+    // try to find PlayerHealth on the player
+    var playerHealth = other.GetComponent<PlayerHealth>();
+    Vector3 hitPos = other.ClosestPoint(transform.position);
+
+    if (playerHealth != null)
+    {
+        bool applied = playerHealth.TryHit(contactDamage, hitPos);
+        if (applied)
+        {
+            Debug.Log($"[Enemy] Contact hit from {name}, contactDamage={contactDamage}");
+        }
+    }
+    else
+    {
+        // fallback: directly damage player if PlayerHealth is missing
+        Debug.LogWarning("[Enemy] PlayerHealth not found on Player, using direct damage");
+        GameManager.Instance.DamagePlayer(contactDamage);
+    }
+}
 
     void OnMouseDown() => TakeDamage(1);
 }

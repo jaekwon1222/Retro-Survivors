@@ -4719,6 +4719,10 @@ MonoBehaviour:
   initialPerBatch: 6
   incrementPerWave: 3
   maxWaves: 5
+  strongEnemyPrefab: {fileID: 1557989887563951259, guid: 3b7c6c33600d448959fd20112913c577, type: 3}
+  strongStartCount: 2
+  strongIncrementPerWave: 2
+  strongSpawnDelay: 1
   edgeOffset: 0.2
   jitterRadius: 0.8
   separation: 0.6

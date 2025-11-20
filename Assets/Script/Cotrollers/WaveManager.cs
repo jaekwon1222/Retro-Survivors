@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class WaveManager : MonoBehaviour
@@ -11,6 +12,12 @@ public class WaveManager : MonoBehaviour
     public int initialPerBatch = 6;
     public int incrementPerWave = 3;
     public int maxWaves = 5;
+
+    [Header("Strong enemies")]
+    public GameObject strongEnemyPrefab;     // strong enemy prefab
+    public int strongStartCount = 2;         // strong enemies on wave 1
+    public int strongIncrementPerWave = 1;   // +1 strong enemy per wave
+    public float strongSpawnDelay = 1f;      // delay (seconds) after normal spawn
 
     [Header("Edge spawn (camera-based)")]
     [Tooltip("Positive = spawn slightly INSIDE the screen edges; negative = outside")]
@@ -71,6 +78,12 @@ public class WaveManager : MonoBehaviour
                 aliveEnemies++;
                 spawned++;
             }
+        }
+
+        // schedule strong enemies spawn after a short delay
+        if (strongEnemyPrefab && strongSpawnDelay >= 0f)
+        {
+            StartCoroutine(SpawnStrongAfterDelay());
         }
 
         Debug.Log($"[WaveManager] Wave {currentWave} spawned: {spawned} enemies (perBatch={perBatch})");
@@ -174,6 +187,42 @@ public class WaveManager : MonoBehaviour
             if (hits[i] && hits[i].CompareTag("Enemy")) return true;
         }
         return false;
+    }
+
+    // -------------------------------------------------------------------------
+    // Strong enemies spawn
+    // -------------------------------------------------------------------------
+    IEnumerator SpawnStrongAfterDelay()
+    {
+        if (!strongEnemyPrefab) yield break;
+
+        // optional early-out if config is effectively disabled
+        if (strongStartCount <= 0 && strongIncrementPerWave <= 0)
+            yield break;
+
+        if (strongSpawnDelay > 0f)
+            yield return new WaitForSeconds(strongSpawnDelay);
+
+        int strongCount = strongStartCount + (currentWave - 1) * strongIncrementPerWave;
+        if (strongCount <= 0) yield break;
+
+        int spawned = 0;
+        for (int i = 0; i < strongCount; i++)
+        {
+            Vector3 pos = FindFreeEdgeSpot();
+            var go = Instantiate(strongEnemyPrefab, pos, Quaternion.identity);
+
+            var enemy = go.GetComponent<Enemy>();
+            if (enemy != null)
+            {
+                enemy.OnDead += OnEnemyDead;
+            }
+
+            aliveEnemies++;
+            spawned++;
+        }
+
+        Debug.Log($"[WaveManager] Wave {currentWave} spawned {spawned} strong enemies");
     }
 
 #if UNITY_EDITOR
