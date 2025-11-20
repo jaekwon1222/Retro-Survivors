@@ -168,8 +168,26 @@ Implemented a complete Game Over system triggered when the player's HP reaches z
 - Main Menu button returns to Scene_MainMenu with proper cursor handling.
 - Fixed issue where hearts did not reset on restart.
 ---
-📘 **Next Version Goal (v0.8.0 - Boss & Advanced Waves)**  
-- Add boss spawn every 5 waves.  
-- Implement special attack patterns.  
-- Add visual damage feedback & screen shake.  
-- Introduce achievements and weapon variety.
+## 14. Strong Enemy System (WIP) + Stability Updates
+
+### Added
+- Introduced **Strong Enemy (mid-tier)**:
+  - Larger sprite and adjusted local scale
+  - Custom HP and custom contact damage value
+  - Spawns ~1 second after normal enemies are finished spawning
+  - Number increases per wave
+- Adjusted Strong Enemy hitbox so collision detection fits the large sprite
+
+### Fixed
+- Restart now correctly restores player HP and resets upgrade stats
+- Cleaned up UI references to prevent destroyed Image exceptions
+
+### Known Issues
+- Strong Enemy still deals **1 damage** regardless of its assigned damage stat  
+  → The damage value is not passing correctly to `DamagePlayer()`  
+  → This will be addressed in the next development session.
+
+### Status
+The feature is partially implemented and functional, game runs normally.
+Only the damage logic for the Strong Enemy is incomplete.
+
