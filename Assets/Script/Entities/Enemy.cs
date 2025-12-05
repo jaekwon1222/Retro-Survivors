@@ -8,8 +8,9 @@ public class Enemy : MonoBehaviour
     public Sprite hoverIcon;
 
     [Header("Stats")]
-    public int maxHP = 3;   // ✅ 추가
+    public int maxHP = 3;   
     public int hp = 3;
+    public int contactDamage = 1;   // damage dealt to player on contact
     public int scoreValue = 10;
     public int contactDamage = 1;
     public float moveSpeed = 2.5f;
@@ -167,6 +168,7 @@ public class Enemy : MonoBehaviour
         }
 
         OnDead?.Invoke(this);
+        SFXManager.Instance?.PlayEnemyDie(); // play enemy death sfx
         Destroy(gameObject);
     }
 

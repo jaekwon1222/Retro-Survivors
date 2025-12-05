@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -64,6 +65,12 @@ public class WaveManager : MonoBehaviour
     public int initialPerBatch = 6;
     public int incrementPerWave = 3;
     public int maxWaves = 5;
+
+    [Header("Strong enemies")]
+    public GameObject strongEnemyPrefab;     // strong enemy prefab
+    public int strongStartCount = 2;         // strong enemies on wave 1
+    public int strongIncrementPerWave = 1;   // +1 strong enemy per wave
+    public float strongSpawnDelay = 1f;      // delay (seconds) after normal spawn
 
     [Header("Edge spawn (camera-based)")]
     [Tooltip("Positive = spawn slightly INSIDE the screen edges; negative = outside")]
@@ -443,6 +450,12 @@ public class WaveManager : MonoBehaviour
                 }
                 spawned++;
             }
+        }
+
+        // schedule strong enemies spawn after a short delay
+        if (strongEnemyPrefab && strongSpawnDelay >= 0f)
+        {
+            StartCoroutine(SpawnStrongAfterDelay());
         }
 
         Debug.Log($"[WaveManager] Wave {currentWave} spawned: {spawned} enemies (perBatch={perBatch})");
