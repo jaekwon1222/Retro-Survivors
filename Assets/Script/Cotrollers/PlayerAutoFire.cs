@@ -204,12 +204,12 @@ public class PlayerAutoFire : MonoBehaviour
 public int ProjectileCount => projectileCount;        // # of bullets per shot
 public int ProjectileDamage => projectileDamage;      // damage per bullet
 public float HitRadius => hitRadius;                  // AoE radius
-    public float FireRatePerSec => 1f / Mathf.Max(0.001f, fireInterval); // shots per second
+public float FireRatePerSec => 1f / Mathf.Max(0.001f, fireInterval); // shots per second
 
   // Expose current fire interval (seconds) for UI panels
-  public float FireInterval => fireInterval;
+public float FireInterval => fireInterval;
   // Expose current pierce count for UI panels
-  public int ProjectilePierce => projectilePierce;
+public int ProjectilePierce => projectilePierce;
 
     // === Reset all upgradeable stats to their base values (used on restart) ===
     public void ResetStats()

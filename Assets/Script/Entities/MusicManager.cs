@@ -36,14 +36,14 @@ public class MusicManager : MonoBehaviour
     }
 
     public void SetMasterVolume(float v) { masterVolume = Mathf.Clamp01(v); ApplyVolume(); }
-    public void SetBgmVolume(float v)    { bgmVolume    = Mathf.Clamp01(v); ApplyVolume(); }
+    public void SetBgmVolume(float v) { bgmVolume = Mathf.Clamp01(v); ApplyVolume(); }
 
     void PlayForScene(string sceneName)
     {
         // simple rule: adjust names to your project
-        if (sceneName == "Scene_MainMenu")    Play(menuClip);
-        else if (sceneName == "Scene_Entry")  Play(gameClip);
-        else                                   Play(gameClip); // default
+        if (sceneName == "Scene_MainMenu") Play(menuClip);
+        else if (sceneName == "Scene_Entry 1") Play(gameClip);
+        else Play(gameClip); // default
     }
 
     public void Play(AudioClip clip)

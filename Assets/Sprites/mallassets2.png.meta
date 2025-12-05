@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 162eb613987642d4ab59ca61425873ab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1864255993671199628
+    second: mallassets2_0
+  - first:
+      213: -7099623793063009620
+    second: mallassets2_1
+  - first:
+      213: 8071300763736929414
+    second: mallassets2_2
+  - first:
+      213: 1933263804901115590
+    second: mallassets2_3
+  - first:
+      213: 1633418660119931252
+    second: mallassets2_4
+  - first:
+      213: -1671147247219282133
+    second: mallassets2_5
+  - first:
+      213: -6499932796332629453
+    second: mallassets2_6
+  - first:
+      213: -1151124887231566505
+    second: mallassets2_7
+  - first:
+      213: 6082023694275281780
+    second: mallassets2_8
+  - first:
+      213: 9151102632275635795
+    second: mallassets2_9
+  - first:
+      213: 8304576816340655002
+    second: mallassets2_10
+  - first:
+      213: -7792882272173310886
+    second: mallassets2_11
+  - first:
+      213: 9008886435401860675
+    second: mallassets2_12
+  - first:
+      213: 7928003703493143147
+    second: mallassets2_13
+  - first:
+      213: 5413913820088189272
+    second: mallassets2_14
+  - first:
+      213: 7835180490181755943
+    second: mallassets2_15
+  - first:
+      213: 8304707901248941253
+    second: mallassets2_16
+  - first:
+      213: -7371811805247444811
+    second: mallassets2_17
+  - first:
+      213: -6251149480409044068
+    second: mallassets2_18
+  - first:
+      213: -7546793721339271230
+    second: mallassets2_19
+  - first:
+      213: 2514027583023449814
+    second: mallassets2_20
+  - first:
+      213: 6767570231441091058
+    second: mallassets2_21
+  - first:
+      213: 5969147219377687247
+    second: mallassets2_22
+  - first:
+      213: 6577100039543229936
+    second: mallassets2_23
+  - first:
+      213: 6917098449335796817
+    second: mallassets2_24
+  - first:
+      213: 1283059282558447090
+    second: mallassets2_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mallassets2_0
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 410
+        width: 119
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474d5de0d05d026e0800000000000000
+      internalID: -1864255993671199628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_1
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 422
+        width: 44
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca2619f86c1197d90800000000000000
+      internalID: -7099623793063009620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_2
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 410
+        width: 119
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 684f0e1f745030070800000000000000
+      internalID: 8071300763736929414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_3
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 349
+        width: 64
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c6404c003554da10800000000000000
+      internalID: 1933263804901115590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 349
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47961fdfd911ba610800000000000000
+      internalID: 1633418660119931252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_5
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 349
+        width: 69
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f6f1ace64eec8e0800000000000000
+      internalID: -1671147247219282133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_6
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 349
+        width: 18
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 332aea25f899bc5a0800000000000000
+      internalID: -6499932796332629453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_7
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 357
+        width: 42
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75d637493026600f0800000000000000
+      internalID: -1151124887231566505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_8
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 350
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47389c47350b76450800000000000000
+      internalID: 6082023694275281780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_9
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 279
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e6ee30c5f3ffe70800000000000000
+      internalID: 9151102632275635795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_10
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 214
+        width: 51
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9bddeb6d98cf3370800000000000000
+      internalID: 8304576816340655002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_11
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 301
+        width: 51
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5cbba6acde1ad390800000000000000
+      internalID: -7792882272173310886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_12
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 260
+        width: 53
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34686fb5b7ef50d70800000000000000
+      internalID: 9008886435401860675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_13
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 214
+        width: 50
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6aa0bc2d5de50e60800000000000000
+      internalID: 7928003703493143147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_14
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 292
+        width: 72
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8514fea6fe5122b40800000000000000
+      internalID: 5413913820088189272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_15
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 260
+        width: 51
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 724ca5ca4272cbc60800000000000000
+      internalID: 7835180490181755943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_16
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 151
+        width: 109
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cca25106df304370800000000000000
+      internalID: 8304707901248941253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_17
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 196
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8e13d783012b990800000000000000
+      internalID: -7371811805247444811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_18
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 151
+        width: 110
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9be956eaa47f39a0800000000000000
+      internalID: -6251149480409044068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_19
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 134
+        width: 75
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c7ac665817644790800000000000000
+      internalID: -7546793721339271230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_20
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 134
+        width: 74
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d685a154ce93e220800000000000000
+      internalID: 2514027583023449814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_21
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 38
+        width: 72
+        height: 85
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f9ed85f44d3bed50800000000000000
+      internalID: 6767570231441091058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_22
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 37
+        width: 76
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca840725cba6d250800000000000000
+      internalID: 5969147219377687247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_23
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 37
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd8e2593ad864b50800000000000000
+      internalID: 6577100039543229936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_24
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 37
+        width: 74
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 154c01d24687eff50800000000000000
+      internalID: 6917098449335796817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallassets2_25
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 38
+        width: 64
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fde9aa9e975ec110800000000000000
+      internalID: 1283059282558447090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 27dd0b0a8d4c7d14aa283a2d87c2f2bd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mallassets2_0: -1864255993671199628
+      mallassets2_1: -7099623793063009620
+      mallassets2_10: 8304576816340655002
+      mallassets2_11: -7792882272173310886
+      mallassets2_12: 9008886435401860675
+      mallassets2_13: 7928003703493143147
+      mallassets2_14: 5413913820088189272
+      mallassets2_15: 7835180490181755943
+      mallassets2_16: 8304707901248941253
+      mallassets2_17: -7371811805247444811
+      mallassets2_18: -6251149480409044068
+      mallassets2_19: -7546793721339271230
+      mallassets2_2: 8071300763736929414
+      mallassets2_20: 2514027583023449814
+      mallassets2_21: 6767570231441091058
+      mallassets2_22: 5969147219377687247
+      mallassets2_23: 6577100039543229936
+      mallassets2_24: 6917098449335796817
+      mallassets2_25: 1283059282558447090
+      mallassets2_3: 1933263804901115590
+      mallassets2_4: 1633418660119931252
+      mallassets2_5: -1671147247219282133
+      mallassets2_6: -6499932796332629453
+      mallassets2_7: -1151124887231566505
+      mallassets2_8: 6082023694275281780
+      mallassets2_9: 9151102632275635795
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

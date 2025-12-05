@@ -7,14 +7,18 @@ public class GameManager : Singleton<GameManager>
 
     void Start()
     {
-        UIManager.Instance.SetWave(currentWave);
+        var wm = FindAnyObjectByType<WaveManager>();
+
+        UIManager.Instance.SetWave(currentWave, wm.maxWaves);
         UIManager.Instance.SetScore(score);
     }
 
     public void StartNextWave() // call when a new wave begins
     {
+        var wm = FindAnyObjectByType<WaveManager>();
+
         currentWave++;
-        UIManager.Instance.SetWave(currentWave);
+        UIManager.Instance.SetWave(currentWave, wm.maxWaves);
         Debug.Log($"Wave {currentWave} started");
     }
 

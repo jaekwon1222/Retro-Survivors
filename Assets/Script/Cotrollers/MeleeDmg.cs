@@ -26,7 +26,7 @@ public class MeleeHitbox : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!parent.IsAttacking) return;
+        //if (!parent.IsAttacking) return;
 
         var enemy = other.GetComponent<Enemy>();
         if (!enemy) return;

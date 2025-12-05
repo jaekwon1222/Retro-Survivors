@@ -1,0 +1,1157 @@
+fileFormatVersion: 2
+guid: b0490e8a43a6a0248bacdaccdb84c510
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7331249604768989117
+    second: mallfloor_0
+  - first:
+      213: -776355458049984189
+    second: mallfloor_1
+  - first:
+      213: 5363103310109332560
+    second: mallfloor_2
+  - first:
+      213: -179820296794624981
+    second: mallfloor_3
+  - first:
+      213: -4321627158746059177
+    second: mallfloor_4
+  - first:
+      213: -7993867431569344971
+    second: mallfloor_5
+  - first:
+      213: 774553842905624623
+    second: mallfloor_6
+  - first:
+      213: 1612551281093892898
+    second: mallfloor_7
+  - first:
+      213: 8497920432486431698
+    second: mallfloor_8
+  - first:
+      213: -7425407324958467403
+    second: mallfloor_9
+  - first:
+      213: -1453141557538131095
+    second: mallfloor_10
+  - first:
+      213: -8928922299494260671
+    second: mallfloor_11
+  - first:
+      213: 4835022564167855357
+    second: mallfloor_12
+  - first:
+      213: -1827688764981218239
+    second: mallfloor_13
+  - first:
+      213: -8260951647615856155
+    second: mallfloor_14
+  - first:
+      213: -8887647449064126577
+    second: mallfloor_15
+  - first:
+      213: 4417053692889116528
+    second: mallfloor_16
+  - first:
+      213: 3207213389129395441
+    second: mallfloor_17
+  - first:
+      213: -4678903984691799327
+    second: mallfloor_18
+  - first:
+      213: 4089555838680185687
+    second: mallfloor_19
+  - first:
+      213: 4851514372601997214
+    second: mallfloor_20
+  - first:
+      213: -8663222965955841323
+    second: mallfloor_21
+  - first:
+      213: 6168552922037894327
+    second: mallfloor_22
+  - first:
+      213: 2792439215934766034
+    second: mallfloor_23
+  - first:
+      213: 2414890765496221682
+    second: mallfloor_24
+  - first:
+      213: -2157674298628421599
+    second: mallfloor_25
+  - first:
+      213: -5931964912419007288
+    second: mallfloor_26
+  - first:
+      213: 2295494483261354351
+    second: mallfloor_27
+  - first:
+      213: 6616521179897313282
+    second: mallfloor_28
+  - first:
+      213: 1620601173061421113
+    second: mallfloor_29
+  - first:
+      213: -291629944535917966
+    second: mallfloor_30
+  - first:
+      213: -1499978944754633846
+    second: mallfloor_31
+  - first:
+      213: -5861258992307878339
+    second: mallfloor_32
+  - first:
+      213: -7460683046943633883
+    second: mallfloor_33
+  - first:
+      213: 6933347602158882930
+    second: mallfloor_34
+  - first:
+      213: -2831470877795213058
+    second: mallfloor_35
+  - first:
+      213: -5299971594398082648
+    second: mallfloor_36
+  - first:
+      213: -7422858112947960964
+    second: mallfloor_37
+  - first:
+      213: -6547575310861321665
+    second: mallfloor_38
+  - first:
+      213: 746508598478578898
+    second: mallfloor_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mallfloor_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 386
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf7af34ca4ddb560800000000000000
+      internalID: 7331249604768989117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_1
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 385
+        width: 167
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 349be7ff2d4d935f0800000000000000
+      internalID: -776355458049984189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_2
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 414
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 054d9ccab029d6a40800000000000000
+      internalID: 5363103310109332560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 291
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ca62e8466218df0800000000000000
+      internalID: -179820296794624981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 296
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ea24ffefe7604c0800000000000000
+      internalID: -4321627158746059177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_5
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 358
+        width: 82
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536bebf9ce3101190800000000000000
+      internalID: -7993867431569344971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_6
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 320
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f20bdc9cd94cfba00800000000000000
+      internalID: 774553842905624623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_7
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 320
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22bd3b3b8dee06610800000000000000
+      internalID: 1612551281093892898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_8
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 288
+        width: 82
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2db33e30c9daee570800000000000000
+      internalID: 8497920432486431698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_9
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 200
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba54432167a3f890800000000000000
+      internalID: -7425407324958467403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_10
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 205
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 963f496d37765dbe0800000000000000
+      internalID: -1453141557538131095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_11
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 221
+        width: 57
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140a49fd978161480800000000000000
+      internalID: -8928922299494260671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_12
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 221
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc2932b763791340800000000000000
+      internalID: 4835022564167855357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_13
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 230
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 144725370ceb2a6e0800000000000000
+      internalID: -1827688764981218239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_14
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 169
+        width: 60
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e1dd21be343b5d80800000000000000
+      internalID: -8260951647615856155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_15
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 131
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8740addbbbb8a480800000000000000
+      internalID: -8887647449064126577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_16
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 153
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07fab7e5ee68c4d30800000000000000
+      internalID: 4417053692889116528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_17
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 153
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc2fe9b59f428c20800000000000000
+      internalID: 3207213389129395441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_18
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 167
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea1946ad91311fb0800000000000000
+      internalID: -4678903984691799327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_19
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 181
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75b38ad2e5501c830800000000000000
+      internalID: 4089555838680185687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_20
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 161
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97e4a11e9a045340800000000000000
+      internalID: 4851514372601997214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_21
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 127
+        width: 80
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d23238bc9c06c780800000000000000
+      internalID: -8663222965955841323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_22
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 92
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc3440433a1b9550800000000000000
+      internalID: 6168552922037894327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_23
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 127
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2db79a20cacb0c620800000000000000
+      internalID: 2792439215934766034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_24
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 90
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fff5c84b5a638120800000000000000
+      internalID: 2414890765496221682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_25
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 76
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 128434148a66e02e0800000000000000
+      internalID: -2157674298628421599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_26
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 99
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c41f2f475d6dada0800000000000000
+      internalID: -5931964912419007288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_27
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 92
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6179aa021c3bdf10800000000000000
+      internalID: 2295494483261354351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_28
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 92
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208b0a015fa92db50800000000000000
+      internalID: 6616521179897313282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_29
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 93
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93848ea3e288d7610800000000000000
+      internalID: 1620601173061421113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_30
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 93
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ad11e4c1ce3fbf0800000000000000
+      internalID: -291629944535917966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_31
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 93
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a83b553d8110f2be0800000000000000
+      internalID: -1499978944754633846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_32
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 15
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d36cce23000a8aea0800000000000000
+      internalID: -5861258992307878339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_33
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 15
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e45251c44567890800000000000000
+      internalID: -7460683046943633883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_34
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 15
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2709cf2e8e2383060800000000000000
+      internalID: 6933347602158882930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_35
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 16
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef027290d3894b8d0800000000000000
+      internalID: -2831470877795213058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_36
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 15
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9dd345ae7b276b0800000000000000
+      internalID: -5299971594398082648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_37
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 15
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c734c9fcfd5bcf890800000000000000
+      internalID: -7422858112947960964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_38
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 15
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3a3efff1f65225a0800000000000000
+      internalID: -6547575310861321665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mallfloor_39
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 15
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4271a7d912c5a00800000000000000
+      internalID: 746508598478578898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ce1deefd8faae76409bf95022147acfb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mallfloor_0: 7331249604768989117
+      mallfloor_1: -776355458049984189
+      mallfloor_10: -1453141557538131095
+      mallfloor_11: -8928922299494260671
+      mallfloor_12: 4835022564167855357
+      mallfloor_13: -1827688764981218239
+      mallfloor_14: -8260951647615856155
+      mallfloor_15: -8887647449064126577
+      mallfloor_16: 4417053692889116528
+      mallfloor_17: 3207213389129395441
+      mallfloor_18: -4678903984691799327
+      mallfloor_19: 4089555838680185687
+      mallfloor_2: 5363103310109332560
+      mallfloor_20: 4851514372601997214
+      mallfloor_21: -8663222965955841323
+      mallfloor_22: 6168552922037894327
+      mallfloor_23: 2792439215934766034
+      mallfloor_24: 2414890765496221682
+      mallfloor_25: -2157674298628421599
+      mallfloor_26: -5931964912419007288
+      mallfloor_27: 2295494483261354351
+      mallfloor_28: 6616521179897313282
+      mallfloor_29: 1620601173061421113
+      mallfloor_3: -179820296794624981
+      mallfloor_30: -291629944535917966
+      mallfloor_31: -1499978944754633846
+      mallfloor_32: -5861258992307878339
+      mallfloor_33: -7460683046943633883
+      mallfloor_34: 6933347602158882930
+      mallfloor_35: -2831470877795213058
+      mallfloor_36: -5299971594398082648
+      mallfloor_37: -7422858112947960964
+      mallfloor_38: -6547575310861321665
+      mallfloor_39: 746508598478578898
+      mallfloor_4: -4321627158746059177
+      mallfloor_5: -7993867431569344971
+      mallfloor_6: 774553842905624623
+      mallfloor_7: 1612551281093892898
+      mallfloor_8: 8497920432486431698
+      mallfloor_9: -7425407324958467403
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
@@ -16,12 +17,16 @@ public class Projectile : MonoBehaviour
     [Tooltip("How many extra enemies this projectile can pass through (0 = hits 1 enemy)")]
     public int pierce = 0;
 
+    public Transform owner;
+
+
     [SerializeField] LayerMask enemyMask; // optional: leave empty to hit everything with Enemy component
 
     Vector2 _dir = Vector2.right;
     Rigidbody2D _rb;
 
     HashSet<Enemy> _alreadyHit = new HashSet<Enemy>();
+    HashSet<RangeEnemy> _alreadyHitRange = new HashSet<RangeEnemy>();
     int enemiesHit = 0;
 
     void Awake()
@@ -64,41 +69,91 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        var enemy = other.GetComponent<Enemy>();
-        if (!enemy) return;
-        if (_alreadyHit.Contains(enemy)) return; // prevent double damage on same enemy
-
-        _alreadyHit.Add(enemy);
-        enemiesHit++;
-
-        Debug.Log($"[Projectile] Instance {GetInstanceID()} hit Enemy {enemy.name} (hp:{enemy.hp}). enemiesHit={enemiesHit} pierce={pierce}");
-
-
-        enemy.TakeDamage(damage);
-
-        // splash
-        if (aoeRadius > 0f)
+        if (other.transform == owner) return;
+        // --- PLAYER HIT ---
+        var playerHealth = other.GetComponent<PlayerHealth>();
+        if (playerHealth)
         {
-            var hits = Physics2D.OverlapCircleAll(transform.position, aoeRadius,
-                enemyMask.value == 0 ? Physics2D.DefaultRaycastLayers : enemyMask);
+            Vector3 hitPos = other.ClosestPoint(transform.position);
 
-            foreach (var hit in hits)
-            {
-                var e = hit.GetComponent<Enemy>();
-                if (e && !_alreadyHit.Contains(e))
-                {
-                    e.TakeDamage(damage);
-                    _alreadyHit.Add(e);
-                    Debug.Log($"[Projectile]  AO E damaged Enemy {e.name}");
-                }
-            }
+            if (playerHealth.TryHit(damage, hitPos))
+                Destroy(gameObject);
+
+            return; // don't check enemy logic below
         }
 
-        // destroy only after exceeding pierce
-        if (enemiesHit >= pierce)
+
+        var enemy = other.GetComponent<Enemy>();
+        if (enemy)
         {
-            Debug.Log($"[Projectile] Instance {GetInstanceID()} exceeded pierce ({pierce}) and will be destroyed.");
-            Destroy(gameObject);
+            if (_alreadyHit.Contains(enemy)) return;
+
+            _alreadyHit.Add(enemy);
+            enemiesHit++;
+
+            enemy.TakeDamage(damage);
+
+            // SPLASH (melee)
+            if (aoeRadius > 0f)
+            {
+                var hits = Physics2D.OverlapCircleAll(
+                    transform.position,
+                    aoeRadius,
+                    enemyMask.value == 0 ? Physics2D.DefaultRaycastLayers : enemyMask
+                );
+
+                foreach (var hit in hits)
+                {
+                    var e = hit.GetComponent<Enemy>();
+                    if (e && !_alreadyHit.Contains(e))
+                    {
+                        e.TakeDamage(damage);
+                        _alreadyHit.Add(e);
+                    }
+                }
+            }
+
+            if (enemiesHit >= pierce)
+                Destroy(gameObject);
+
+            return; // IMPORTANT: stop here
+        }
+
+        var rangeEnemy = other.GetComponent<RangeEnemy>();
+        if (rangeEnemy)
+        {
+            if (_alreadyHitRange.Contains(rangeEnemy)) return;
+
+            _alreadyHitRange.Add(rangeEnemy);
+            enemiesHit++;
+
+            rangeEnemy.TakeDamage(damage);
+
+
+            // SPLASH (range enemies)
+            if (aoeRadius > 0f)
+            {
+                var hits = Physics2D.OverlapCircleAll(
+                    transform.position,
+                    aoeRadius,
+                    enemyMask.value == 0 ? Physics2D.DefaultRaycastLayers : enemyMask
+                );
+
+                foreach (var hit in hits)
+                {
+                    var re = hit.GetComponent<RangeEnemy>();
+                    if (re && !_alreadyHitRange.Contains(re))
+                    {
+                        re.TakeDamage(damage);
+                        _alreadyHitRange.Add(re);
+                    }
+                }
+            }
+
+            if (enemiesHit >= pierce)
+                Destroy(gameObject);
+
+            return; // done
         }
     }
 

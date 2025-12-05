@@ -21,11 +21,13 @@ public class UIManager : Singleton<UIManager>
     private int currentWave = 1;
     private int currentScore = 0;
 
+    [SerializeField] public GameObject gameOverPanel;
+
     protected override void Awake()
     {
         base.Awake();
         // UIManager should live only in Entry scene
-        if (SceneManager.GetActiveScene().name != "Scene_Entry")
+        if (SceneManager.GetActiveScene().name != "Scene_Entry" && SceneManager.GetActiveScene().name != "Scene_Entry 1")
         {
             Destroy(gameObject);
             return;
@@ -36,7 +38,7 @@ public class UIManager : Singleton<UIManager>
     {
         InitHearts(maxHP);
         SetHP(maxHP);
-        SetWave(1);
+        SetWave(1, FindAnyObjectByType<WaveManager>().maxWaves);
         SetScore(0);
 
         if (gameOverPanel)
@@ -96,7 +98,7 @@ public class UIManager : Singleton<UIManager>
     public void FullHeal()
     {
         SetHP(maxHP);
-        SFXManager.Instance?.PlayHeal();
+        //SFXManager.Instance?.PlayHeal();
     }
 
     // ---------------- Game Over ----------------
@@ -112,10 +114,54 @@ public class UIManager : Singleton<UIManager>
 
     public void OnClickGameOverMainMenu()
     {
+        // resume time
+        Time.timeScale = 1f;
+
+        // unlock cursor for menu
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+        // reset player stats
+        var auto = FindObjectOfType<PlayerAutoFire>();
+        if (auto) auto.ResetStats();
+
+        var move = FindObjectOfType<PlayerMovement>();
+        // if (move) move.ResetStats();
+
+        // destroy UIManager so when returning to Scene_Entry1 we get a fresh one
+        Destroy(gameObject);
+
+        // load main menu
+        SceneManager.LoadScene("Scene_MainMenu");
+    }
+
+    public void OnClickVictoryMainMenu()
+    {
         Time.timeScale = 1f;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("Scene_MainMenu");
+    }
+
+    public void OnClickVictoryMissionSelect()
+    {
+        // resume time
+        Time.timeScale = 1f;
+
+        // unlock cursor for menu
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+        // reset player stats
+        var auto = FindObjectOfType<PlayerAutoFire>();
+        if (auto) auto.ResetStats();
+
+        var move = FindObjectOfType<PlayerMovement>();
+        // if (move) move.ResetStats();
+
+        // destroy UIManager so when returning to Scene_Entry1 we get a fresh one
+        Destroy(gameObject);
+        SceneManager.LoadScene("StoryMenu");
     }
 
     public void OnClickGameOverRestart()
@@ -132,20 +178,20 @@ public class UIManager : Singleton<UIManager>
         if (auto) auto.ResetStats();
 
         var move = FindObjectOfType<PlayerMovement>();
-        if (move) move.ResetStats();
+        //if (move) move.ResetStats();
 
         // destroy UIManager so a fresh one is created in the new Scene_Entry
         Destroy(gameObject);
 
         // reload entry scene
-        SceneManager.LoadScene("Scene_Entry");
+        SceneManager.LoadScene("Scene_Entry 1");
     }
 
     // ---------------- Wave / Score ----------------
-    public void SetWave(int wave)
+    public void SetWave(int wave, int maxWaves)
     {
         currentWave = Mathf.Max(1, wave);
-        if (waveText) waveText.text = $"Wave: {currentWave}";
+        if (waveText) waveText.text = $"Wave: {currentWave} / {maxWaves}";
     }
 
     public void SetScore(int score)
@@ -155,6 +201,14 @@ public class UIManager : Singleton<UIManager>
     }
 
     public void AddScore(int delta) => SetScore(currentScore + delta);
+
+    public void SetupHeartsForPlayer(int hp)
+    {
+        maxHP = hp;
+        InitHearts(maxHP);
+        SetHP(maxHP);
+    }
+
 
     // ---------------- Buttons ----------------
     public void OnClickBackToMenu()
