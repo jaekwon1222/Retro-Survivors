@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -5,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
+    [SerializeField] private Animator animator;
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
@@ -22,6 +24,16 @@ public class PlayerMovement : MonoBehaviour
 
         // Normalize to avoid faster diagonal speed
         moveInput.Normalize();
+
+        if (moveInput.sqrMagnitude > 0f)   // avoids vector comparison issues
+        {
+            animator.SetBool("isRunning", true);
+        }
+        else
+        {
+            animator.SetBool("isRunning", false);
+        }
+
     }
 
     void FixedUpdate()
@@ -35,5 +47,6 @@ public class PlayerMovement : MonoBehaviour
 public void AddSpeedMultiplier(float multiplier)
 {
     moveSpeed *= multiplier;     // uses moveSpeed
-}
+        Debug.Log("New moveSpeed = " + moveSpeed);
+    }
 }

@@ -168,9 +168,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bb448925ed0b4efda7e6f01485f9e95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
-  damage: 1
   speed: 12
-  lifeTime: 4
-  hitLayers:
+  damage: 1
+  aoeRadius: 0
+  pierce: 0
+  enemyMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0

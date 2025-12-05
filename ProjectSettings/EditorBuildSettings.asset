@@ -9,11 +9,23 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene_MainMenu.unity
     guid: 357df0374751c411e8ff8ea511b0be60
   - enabled: 1
+    path: Assets/Scenes/Achievements_Scene.unity
+    guid: 1bb00b5e2fe972e4089566295595289a
+  - enabled: 1
+    path: Assets/Scenes/GameSelection.unity
+    guid: 6fd032b7d229383479a6e148defa4758
+  - enabled: 1
+    path: Assets/Scenes/StoryMenu.unity
+    guid: b1942a8bbed73ff4aa85d4d2a385bd59
+  - enabled: 1
+    path: Assets/Scenes/Scene_Entry 1.unity
+    guid: 4a0904cb50a94df4e9ac2c106dc5d9f5
+  - enabled: 1
     path: Assets/Scenes/Scene_Entry.unity
     guid: fb6a93791f91b453ba4f8ea5a3ba8e98
   - enabled: 1
-    path: Assets/Scenes/Achievements_Scene.unity
-    guid: 1bb00b5e2fe972e4089566295595289a
+    path: Assets/Scenes/EndlessMenu.unity
+    guid: ab21ea7ec2e37404ba753b7fadb6b015
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: b75e5f2081e06cf47b84f7b5d289c6e5, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
