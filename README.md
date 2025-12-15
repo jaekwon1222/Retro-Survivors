@@ -1,6 +1,6 @@
-## Retro Survivors
+## 🎮 Retro Survivors
 
-🎮 Retro Survivors Retro Survivors is a minimalist, action packed survival game inspired by the rapidly growing auto combat genre. Built as a capstone project, the game explores how simple controls can support deep and engaging gameplay through enemy swarms, different combat builds, diverse upgrades, and progressively scaling waves. The goal is to create a tight gameplay loop where strategic progression and moment to moment survival are equally important.
+Retro Survivors is a minimalist, action packed survival game inspired by the rapidly growing auto combat genre. Built as a capstone project, the game explores how simple controls can support deep and engaging gameplay through enemy swarms, different combat builds, diverse upgrades, and progressively scaling waves. The goal is to create a tight gameplay loop where strategic progression and moment to moment survival are equally important.
 
 ---
 
