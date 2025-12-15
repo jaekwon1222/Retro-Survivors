@@ -5,7 +5,7 @@ A 2D survival game project built with Unity.
 ---
 
 
-![Gameplay GIF](assets/retrogameshow.gif)
+![Gameplay GIF](Assets/Sprites/retrogameshow.gif)
 
 ## 📖 How to Get the Latest Code
 
