@@ -14,7 +14,7 @@ To play **Retro Survivors**, you’ll need to open and run the project in **Unit
 
 ### Prerequisites
 - **Unity Hub** installed  
-- **Unity Editor version:** *(add your exact version here, e.g. 2022.3 LTS)*  
+- **Unity Editor version:** *(6000.2.6f2)*  
 - **Git** (or download ZIP from GitHub)
 
 ---
