@@ -1,11 +1,58 @@
 # Retro Survivors
 
-A 2D survival game project built with Unity.
+🎮 Retro Survivors Retro Survivors is a minimalist, action packed survival game inspired by the rapidly growing auto combat genre. Built as a capstone project, the game explores how simple controls can support deep and engaging gameplay through enemy swarms, different combat builds, diverse upgrades, and progressively scaling waves. The goal is to create a tight gameplay loop where strategic progression and moment to moment survival are equally important.
 
 ---
 
 
 ![Gameplay GIF](Assets/Sprites/retrogameshow.gif)
+
+
+## ▶️ How to Play (Unity)
+
+To play **Retro Survivors**, you’ll need to open and run the project in **Unity**.
+
+### Prerequisites
+- **Unity Hub** installed  
+- **Unity Editor version:** *(add your exact version here, e.g. 2022.3 LTS)*  
+- **Git** (or download ZIP from GitHub)
+
+---
+
+### Setup Instructions
+
+#### 1. Clone the Repository
+```bash
+git clone https://github.com/jaekwon1222/Retro-Survivors.git
+```
+---
+
+### 2. Open the Project in Unity
+- Launch **Unity Hub**
+- Click **Open**
+- Select the root folder of the cloned repository
+- Open the project using the recommended Unity version
+
+---
+
+### 3. Load the Main Scene
+- In the **Project** window, navigate to:
+- Open the main gameplay scene (e.g. `MainMenuScene`)
+
+---
+
+### 4. Run the Game
+- Press the **Play ▶️** button at the top of the Unity Editor
+- The game will start in the editor
+
+---
+
+### Basic Controls
+- **Movement:** WASD / Arrow Keys  
+- **Attacks:** Manual Fire/Hold Fire on Cursor  
+- **Upgrades:** Choose upgrades when prompted between waves  
+- **Goal:** Survive as long as possible against increasingly difficult enemy waves
+
 
 ## 📖 How to Get the Latest Code
 
