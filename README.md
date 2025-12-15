@@ -4,7 +4,7 @@ A 2D survival game project built with Unity.
 
 ---
 
-![Retro Survivors Gameplay](assets/sprites/Untitled_video_-_Made_with_Clipchamp.gif)
+![Retro Survivors Gameplay](https://raw.githubusercontent.com/jaekwon1222/Retro-Survivors/main/assets/sprites/Untitled_video_-_Made_with_Clipchamp.gif)
 
 ## 📖 How to Get the Latest Code
 
