@@ -4,6 +4,8 @@ A 2D survival game project built with Unity.
 
 ---
 
+![Retro Survivors Gameplay](assets/sprites/mancala_demo.gif)
+
 ## 📖 How to Get the Latest Code
 
 ### 0) (First time only) Clone + set up Git LFS
