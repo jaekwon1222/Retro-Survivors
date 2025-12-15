@@ -120,20 +120,20 @@ public class MainMenuController : MonoBehaviour
         // Ensure object is active so we can apply alpha/interactable
         if (!p.activeSelf && show) p.SetActive(true);
 
-        if (p == settingsPanel && settingsCG != null)
-        {
-            settingsCG.alpha = show ? 1f : 0f;
-            settingsCG.interactable = show;
-            settingsCG.blocksRaycasts = show;
-            if (!show) p.SetActive(false);
-        }
-        else
-        {
-            // Fallback when CanvasGroup is not present
-            p.SetActive(show);
-        }
+        // if (p == settingsPanel && settingsCG != null)  //debug
+        // {
+        //     settingsCG.alpha = show ? 1f : 0f;
+        //     settingsCG.interactable = show;
+        //     settingsCG.blocksRaycasts = show;
+        //     if (!show) p.SetActive(false);
+        // }
+        // else
+        // {
+        //     // Fallback when CanvasGroup is not present
+        //     p.SetActive(show);
+        // }
 
-        Debug.Log($"[MainMenu] ShowPanel({p.name}, show={show}) | activeSelf={p.activeSelf} | cg={(settingsCG != null ? settingsCG.alpha.ToString("0.00") : "none")}");
+       // Debug.Log($"[MainMenu] ShowPanel({p.name}, show={show}) | activeSelf={p.activeSelf} | cg={(settingsCG != null ? settingsCG.alpha.ToString("0.00") : "none")}");
     }
 
     [ContextMenu("DEBUG/Open Settings")]
@@ -158,14 +158,14 @@ public class MainMenuController : MonoBehaviour
             OnClickStart();
 
         // Esc -> close settings if open, otherwise quit
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            bool settingsOpen =
-                settingsPanel &&
-                ((settingsCG != null && settingsCG.alpha > 0.5f) || settingsPanel.activeSelf);
+        // if (Input.GetKeyDown(KeyCode.Escape))
+        // {
+        //     bool settingsOpen =
+        //         settingsPanel &&
+        //         ((settingsCG != null && settingsCG.alpha > 0.5f) || settingsPanel.activeSelf);
 
-            if (settingsOpen) OnClickCloseSetting();
-            else OnClickQuit();
-        }
+        //     if (settingsOpen) OnClickCloseSetting();
+        //     else OnClickQuit();
+        // }
     }
 }

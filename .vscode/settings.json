@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "RetroSurvivors.sln"
+    "dotnet.defaultSolution": "Retro-Survivors.sln"
 }

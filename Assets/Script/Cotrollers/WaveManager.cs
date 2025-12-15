@@ -66,12 +66,6 @@ public class WaveManager : MonoBehaviour
     public int incrementPerWave = 3;
     public int maxWaves = 5;
 
-    [Header("Strong enemies")]
-    public GameObject strongEnemyPrefab;     // strong enemy prefab
-    public int strongStartCount = 2;         // strong enemies on wave 1
-    public int strongIncrementPerWave = 1;   // +1 strong enemy per wave
-    public float strongSpawnDelay = 1f;      // delay (seconds) after normal spawn
-
     [Header("Edge spawn (camera-based)")]
     [Tooltip("Positive = spawn slightly INSIDE the screen edges; negative = outside")]
     public float edgeOffset = 0.3f;         // 0.2~0.5 feels close to the edge (inside)

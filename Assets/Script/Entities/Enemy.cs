@@ -10,7 +10,6 @@ public class Enemy : MonoBehaviour
     [Header("Stats")]
     public int maxHP = 3;   
     public int hp = 3;
-    public int contactDamage = 1;   // damage dealt to player on contact
     public int scoreValue = 10;
     public int contactDamage = 1;
     public float moveSpeed = 2.5f;

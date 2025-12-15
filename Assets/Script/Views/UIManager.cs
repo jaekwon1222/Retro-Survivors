@@ -14,7 +14,6 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] public int maxHP = 10;           // max hearts
 
     [Header("Game Over")]
-    [SerializeField] public GameObject gameOverPanel; // panel shown when player dies
 
     private readonly List<Image> hearts = new List<Image>();
     private int currentHP;
